@@ -1,5 +1,5 @@
 Assembler report for piano
-Tue Dec 01 00:14:36 2020
+Thu Dec 10 19:52:02 2020
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -10,8 +10,8 @@ Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: D:/Documents/BUET/My Files/DLD/DLD Project Proposals/Poor Mans Piano/Piano/piano.sof
-  6. Assembler Device Options: D:/Documents/BUET/My Files/DLD/DLD Project Proposals/Poor Mans Piano/Piano/piano.pof
+  5. Assembler Device Options: D:/Projects/Poor-Mans-Piano/Piano/piano.sof
+  6. Assembler Device Options: D:/Projects/Poor-Mans-Piano/Piano/piano.pof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Dec 01 00:14:36 2020 ;
+; Assembler Status      ; Successful - Thu Dec 10 19:52:02 2020 ;
 ; Revision Name         ; piano                                 ;
 ; Top-level Entity Name ; piano                                 ;
 ; Family                ; Cyclone II                            ;
@@ -76,37 +76,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                            ;
-+--------------------------------------------------------------------------------------+
-; File Name                                                                            ;
-+--------------------------------------------------------------------------------------+
-; D:/Documents/BUET/My Files/DLD/DLD Project Proposals/Poor Mans Piano/Piano/piano.sof ;
-; D:/Documents/BUET/My Files/DLD/DLD Project Proposals/Poor Mans Piano/Piano/piano.pof ;
-+--------------------------------------------------------------------------------------+
++---------------------------------------------+
+; Assembler Generated Files                   ;
++---------------------------------------------+
+; File Name                                   ;
++---------------------------------------------+
+; D:/Projects/Poor-Mans-Piano/Piano/piano.sof ;
+; D:/Projects/Poor-Mans-Piano/Piano/piano.pof ;
++---------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: D:/Documents/BUET/My Files/DLD/DLD Project Proposals/Poor Mans Piano/Piano/piano.sof ;
-+----------------+-----------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                       ;
-+----------------+-----------------------------------------------------------------------------------------------+
-; Device         ; EP2C5T144C8                                                                                   ;
-; JTAG usercode  ; 0xFFFFFFFF                                                                                    ;
-; Checksum       ; 0x0012DB9C                                                                                    ;
-+----------------+-----------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------+
+; Assembler Device Options: D:/Projects/Poor-Mans-Piano/Piano/piano.sof ;
++----------------+------------------------------------------------------+
+; Option         ; Setting                                              ;
++----------------+------------------------------------------------------+
+; Device         ; EP2C5T144C8                                          ;
+; JTAG usercode  ; 0xFFFFFFFF                                           ;
+; Checksum       ; 0x0012F1A3                                           ;
++----------------+------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: D:/Documents/BUET/My Files/DLD/DLD Project Proposals/Poor Mans Piano/Piano/piano.pof ;
-+--------------------+-------------------------------------------------------------------------------------------+
-; Option             ; Setting                                                                                   ;
-+--------------------+-------------------------------------------------------------------------------------------+
-; Device             ; EPCS4                                                                                     ;
-; JTAG usercode      ; 0x00000000                                                                                ;
-; Checksum           ; 0x07425C3F                                                                                ;
-; Compression Ratio  ; 2                                                                                         ;
-+--------------------+-------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------+
+; Assembler Device Options: D:/Projects/Poor-Mans-Piano/Piano/piano.pof ;
++--------------------+--------------------------------------------------+
+; Option             ; Setting                                          ;
++--------------------+--------------------------------------------------+
+; Device             ; EPCS4                                            ;
+; JTAG usercode      ; 0x00000000                                       ;
+; Checksum           ; 0x073FC1B3                                       ;
+; Compression Ratio  ; 2                                                ;
++--------------------+--------------------------------------------------+
 
 
 +--------------------+
@@ -115,14 +115,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
-    Info: Processing started: Tue Dec 01 00:14:33 2020
+    Info: Processing started: Thu Dec 10 19:52:00 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off piano -c piano
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 220 megabytes
-    Info: Processing ended: Tue Dec 01 00:14:36 2020
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Processing ended: Thu Dec 10 19:52:02 2020
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

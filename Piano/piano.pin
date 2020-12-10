@@ -70,13 +70,13 @@ Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage 
 -------------------------------------------------------------------------------------------------------------
 ~ASDO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 1         : input  : 3.3-V LVTTL       :         : 1         : N              
 ~nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 2         : input  : 3.3-V LVTTL       :         : 1         : N              
-switches[24]                 : 3         : input  : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : 4         :        :                   :         : 1         :                
+GND*                         : 3         :        :                   :         : 1         :                
+speaker[14]                  : 4         : output : 3.3-V LVTTL       :         : 1         : Y              
 VCCIO1                       : 5         : power  :                   : 3.3V    : 1         :                
 GND                          : 6         : gnd    :                   :         :           :                
-speaker[5]                   : 7         : output : 3.3-V LVTTL       :         : 1         : N              
-speaker[28]                  : 8         : output : 3.3-V LVTTL       :         : 1         : N              
-speaker[24]                  : 9         : output : 3.3-V LVTTL       :         : 1         : N              
+speaker[15]                  : 7         : output : 3.3-V LVTTL       :         : 1         : Y              
+speaker[16]                  : 8         : output : 3.3-V LVTTL       :         : 1         : Y              
+speaker[17]                  : 9         : output : 3.3-V LVTTL       :         : 1         : Y              
 TDO                          : 10        : output :                   :         : 1         :                
 TMS                          : 11        : input  :                   :         : 1         :                
 TCK                          : 12        : input  :                   :         : 1         :                
@@ -85,21 +85,21 @@ DATA0                        : 14        : input  :                   :         
 DCLK                         : 15        :        :                   :         : 1         :                
 nCE                          : 16        :        :                   :         : 1         :                
 clk                          : 17        : input  : 3.3-V LVTTL       :         : 1         : Y              
-switches[27]                 : 18        : input  : 3.3-V LVTTL       :         : 1         : N              
+GND+                         : 18        :        :                   :         : 1         :                
 GND                          : 19        : gnd    :                   :         :           :                
 nCONFIG                      : 20        :        :                   :         : 1         :                
-switches[28]                 : 21        : input  : 3.3-V LVTTL       :         : 1         : N              
-switches[29]                 : 22        : input  : 3.3-V LVTTL       :         : 1         : N              
+GND+                         : 21        :        :                   :         : 1         :                
+GND+                         : 22        :        :                   :         : 1         :                
 VCCIO1                       : 23        : power  :                   : 3.3V    : 1         :                
-GND*                         : 24        :        :                   :         : 1         :                
-switches[23]                 : 25        : input  : 3.3-V LVTTL       :         : 1         : N              
-speaker[25]                  : 26        : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : 27        :        :                   :         : 1         :                
-speaker[0]                   : 28        : output : 3.3-V LVTTL       :         : 1         : N              
+speaker[18]                  : 24        : output : 3.3-V LVTTL       :         : 1         : Y              
+speaker[19]                  : 25        : output : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : 26        :        :                   :         : 1         :                
+speaker[0]                   : 27        : output : 3.3-V LVTTL       :         : 1         : N              
+speaker[20]                  : 28        : output : 3.3-V LVTTL       :         : 1         : Y              
 VCCIO1                       : 29        : power  :                   : 3.3V    : 1         :                
-switches[0]                  : 30        : input  : 3.3-V LVTTL       :         : 1         : N              
-speaker[12]                  : 31        : output : 3.3-V LVTTL       :         : 1         : N              
-speaker[14]                  : 32        : output : 3.3-V LVTTL       :         : 1         : N              
+speaker[21]                  : 30        : output : 3.3-V LVTTL       :         : 1         : Y              
+speaker[22]                  : 31        : output : 3.3-V LVTTL       :         : 1         : Y              
+speaker[23]                  : 32        : output : 3.3-V LVTTL       :         : 1         : Y              
 GND                          : 33        : gnd    :                   :         :           :                
 GND_PLL1                     : 34        : gnd    :                   :         :           :                
 VCCD_PLL1                    : 35        : power  :                   : 1.2V    :           :                
@@ -107,71 +107,71 @@ GND_PLL1                     : 36        : gnd    :                   :         
 VCCA_PLL1                    : 37        : power  :                   : 1.2V    :           :                
 GNDA_PLL1                    : 38        : gnd    :                   :         :           :                
 GND                          : 39        : gnd    :                   :         :           :                
-switches[14]                 : 40        : input  : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : 41        :        :                   :         : 4         :                
-speaker[4]                   : 42        : output : 3.3-V LVTTL       :         : 4         : N              
-switches[1]                  : 43        : input  : 3.3-V LVTTL       :         : 4         : N              
-switches[12]                 : 44        : input  : 3.3-V LVTTL       :         : 4         : N              
-switches[8]                  : 45        : input  : 3.3-V LVTTL       :         : 4         : N              
+speaker[35]                  : 40        : output : 3.3-V LVTTL       :         : 4         : Y              
+speaker[34]                  : 41        : output : 3.3-V LVTTL       :         : 4         : Y              
+speaker[33]                  : 42        : output : 3.3-V LVTTL       :         : 4         : Y              
+speaker[32]                  : 43        : output : 3.3-V LVTTL       :         : 4         : Y              
+speaker[31]                  : 44        : output : 3.3-V LVTTL       :         : 4         : Y              
+speaker[30]                  : 45        : output : 3.3-V LVTTL       :         : 4         : Y              
 VCCIO4                       : 46        : power  :                   : 3.3V    : 4         :                
-switches[20]                 : 47        : input  : 3.3-V LVTTL       :         : 4         : N              
-speaker[27]                  : 48        : output : 3.3-V LVTTL       :         : 4         : N              
+speaker[29]                  : 47        : output : 3.3-V LVTTL       :         : 4         : Y              
+speaker[28]                  : 48        : output : 3.3-V LVTTL       :         : 4         : Y              
 GND                          : 49        : gnd    :                   :         :           :                
 VCCINT                       : 50        : power  :                   : 1.2V    :           :                
-switches[10]                 : 51        : input  : 3.3-V LVTTL       :         : 4         : N              
-speaker[20]                  : 52        : output : 3.3-V LVTTL       :         : 4         : N              
-switches[30]                 : 53        : input  : 3.3-V LVTTL       :         : 4         : Y              
+speaker[27]                  : 51        : output : 3.3-V LVTTL       :         : 4         : Y              
+speaker[26]                  : 52        : output : 3.3-V LVTTL       :         : 4         : Y              
+speaker[25]                  : 53        : output : 3.3-V LVTTL       :         : 4         : Y              
 VCCIO4                       : 54        : power  :                   : 3.3V    : 4         :                
-switches[31]                 : 55        : input  : 3.3-V LVTTL       :         : 4         : Y              
+speaker[24]                  : 55        : output : 3.3-V LVTTL       :         : 4         : Y              
 GND                          : 56        : gnd    :                   :         :           :                
-switches[32]                 : 57        : input  : 3.3-V LVTTL       :         : 4         : Y              
-switches[33]                 : 58        : input  : 3.3-V LVTTL       :         : 4         : Y              
-switches[34]                 : 59        : input  : 3.3-V LVTTL       :         : 4         : Y              
-switches[35]                 : 60        : input  : 3.3-V LVTTL       :         : 4         : Y              
+speaker[6]                   : 57        : output : 3.3-V LVTTL       :         : 4         : Y              
+speaker[7]                   : 58        : output : 3.3-V LVTTL       :         : 4         : Y              
+speaker[8]                   : 59        : output : 3.3-V LVTTL       :         : 4         : Y              
+speaker[9]                   : 60        : output : 3.3-V LVTTL       :         : 4         : Y              
 GND                          : 61        : gnd    :                   :         :           :                
 VCCINT                       : 62        : power  :                   : 1.2V    :           :                
-speaker[21]                  : 63        : output : 3.3-V LVTTL       :         : 4         : N              
-switches[25]                 : 64        : input  : 3.3-V LVTTL       :         : 4         : N              
-speaker[30]                  : 65        : output : 3.3-V LVTTL       :         : 4         : Y              
+speaker[10]                  : 63        : output : 3.3-V LVTTL       :         : 4         : Y              
+speaker[11]                  : 64        : output : 3.3-V LVTTL       :         : 4         : Y              
+speaker[12]                  : 65        : output : 3.3-V LVTTL       :         : 4         : Y              
 VCCIO4                       : 66        : power  :                   : 3.3V    : 4         :                
-speaker[31]                  : 67        : output : 3.3-V LVTTL       :         : 4         : Y              
+speaker[13]                  : 67        : output : 3.3-V LVTTL       :         : 4         : Y              
 GND                          : 68        : gnd    :                   :         :           :                
-speaker[32]                  : 69        : output : 3.3-V LVTTL       :         : 4         : Y              
-speaker[33]                  : 70        : output : 3.3-V LVTTL       :         : 4         : Y              
-speaker[34]                  : 71        : output : 3.3-V LVTTL       :         : 4         : Y              
-speaker[35]                  : 72        : output : 3.3-V LVTTL       :         : 4         : Y              
-speaker[17]                  : 73        : output : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : 74        :        :                   :         : 3         :                
-switches[17]                 : 75        : input  : 3.3-V LVTTL       :         : 3         : N              
+switches[0]                  : 69        : input  : 3.3-V LVTTL       :         : 4         : Y              
+switches[1]                  : 70        : input  : 3.3-V LVTTL       :         : 4         : Y              
+switches[2]                  : 71        : input  : 3.3-V LVTTL       :         : 4         : Y              
+switches[3]                  : 72        : input  : 3.3-V LVTTL       :         : 4         : Y              
+GND*                         : 73        :        :                   :         : 3         :                
+switches[4]                  : 74        : input  : 3.3-V LVTTL       :         : 3         : Y              
+switches[5]                  : 75        : input  : 3.3-V LVTTL       :         : 3         : Y              
 ~LVDS41p/nCEO~               : 76        : output : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : 77        : power  :                   : 3.3V    : 3         :                
 GND                          : 78        : gnd    :                   :         :           :                
-switches[9]                  : 79        : input  : 3.3-V LVTTL       :         : 3         : N              
-speaker[23]                  : 80        : output : 3.3-V LVTTL       :         : 3         : N              
-switches[26]                 : 81        : input  : 3.3-V LVTTL       :         : 3         : N              
+switches[6]                  : 79        : input  : 3.3-V LVTTL       :         : 3         : Y              
+speaker[5]                   : 80        : output : 3.3-V LVTTL       :         : 3         : N              
+switches[7]                  : 81        : input  : 3.3-V LVTTL       :         : 3         : Y              
 nSTATUS                      : 82        :        :                   :         : 3         :                
 CONF_DONE                    : 83        :        :                   :         : 3         :                
 MSEL1                        : 84        :        :                   :         : 3         :                
 MSEL0                        : 85        :        :                   :         : 3         :                
-switches[2]                  : 86        : input  : 3.3-V LVTTL       :         : 3         : N              
-switches[16]                 : 87        : input  : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : 86        :        :                   :         : 3         :                
+GND*                         : 87        :        :                   :         : 3         :                
 GND+                         : 88        :        :                   :         : 3         :                
 GND+                         : 89        :        :                   :         : 3         :                
 GND+                         : 90        :        :                   :         : 3         :                
 GND+                         : 91        :        :                   :         : 3         :                
-switches[19]                 : 92        : input  : 3.3-V LVTTL       :         : 3         : N              
-speaker[26]                  : 93        : output : 3.3-V LVTTL       :         : 3         : N              
-speaker[18]                  : 94        : output : 3.3-V LVTTL       :         : 3         : N              
+switches[8]                  : 92        : input  : 3.3-V LVTTL       :         : 3         : Y              
+switches[9]                  : 93        : input  : 3.3-V LVTTL       :         : 3         : Y              
+switches[10]                 : 94        : input  : 3.3-V LVTTL       :         : 3         : Y              
 VCCIO3                       : 95        : power  :                   : 3.3V    : 3         :                
-GND*                         : 96        :        :                   :         : 3         :                
-switches[18]                 : 97        : input  : 3.3-V LVTTL       :         : 3         : N              
+switches[11]                 : 96        : input  : 3.3-V LVTTL       :         : 3         : Y              
+switches[12]                 : 97        : input  : 3.3-V LVTTL       :         : 3         : Y              
 GND                          : 98        : gnd    :                   :         :           :                
-switches[21]                 : 99        : input  : 3.3-V LVTTL       :         : 3         : N              
-speaker[22]                  : 100       : output : 3.3-V LVTTL       :         : 3         : N              
-switches[22]                 : 101       : input  : 3.3-V LVTTL       :         : 3         : N              
+switches[13]                 : 99        : input  : 3.3-V LVTTL       :         : 3         : Y              
+switches[14]                 : 100       : input  : 3.3-V LVTTL       :         : 3         : Y              
+switches[15]                 : 101       : input  : 3.3-V LVTTL       :         : 3         : Y              
 VCCIO3                       : 102       : power  :                   : 3.3V    : 3         :                
-speaker[13]                  : 103       : output : 3.3-V LVTTL       :         : 3         : N              
-GND*                         : 104       :        :                   :         : 3         :                
+switches[16]                 : 103       : input  : 3.3-V LVTTL       :         : 3         : Y              
+switches[17]                 : 104       : input  : 3.3-V LVTTL       :         : 3         : Y              
 GND                          : 105       : gnd    :                   :         :           :                
 GND_PLL2                     : 106       : gnd    :                   :         :           :                
 VCCD_PLL2                    : 107       : power  :                   : 1.2V    :           :                
@@ -179,36 +179,36 @@ GND_PLL2                     : 108       : gnd    :                   :         
 VCCA_PLL2                    : 109       : power  :                   : 1.2V    :           :                
 GNDA_PLL2                    : 110       : gnd    :                   :         :           :                
 GND                          : 111       : gnd    :                   :         :           :                
-speaker[19]                  : 112       : output : 3.3-V LVTTL       :         : 2         : N              
-speaker[7]                   : 113       : output : 3.3-V LVTTL       :         : 2         : N              
-speaker[2]                   : 114       : output : 3.3-V LVTTL       :         : 2         : N              
-switches[7]                  : 115       : input  : 3.3-V LVTTL       :         : 2         : N              
+speaker[2]                   : 112       : output : 3.3-V LVTTL       :         : 2         : N              
+speaker[3]                   : 113       : output : 3.3-V LVTTL       :         : 2         : N              
+switches[18]                 : 114       : input  : 3.3-V LVTTL       :         : 2         : Y              
+switches[19]                 : 115       : input  : 3.3-V LVTTL       :         : 2         : Y              
 VCCIO2                       : 116       : power  :                   : 3.3V    : 2         :                
 GND                          : 117       : gnd    :                   :         :           :                
-switches[15]                 : 118       : input  : 3.3-V LVTTL       :         : 2         : N              
-switches[13]                 : 119       : input  : 3.3-V LVTTL       :         : 2         : N              
-switches[6]                  : 120       : input  : 3.3-V LVTTL       :         : 2         : N              
-speaker[6]                   : 121       : output : 3.3-V LVTTL       :         : 2         : N              
-speaker[9]                   : 122       : output : 3.3-V LVTTL       :         : 2         : N              
+switches[20]                 : 118       : input  : 3.3-V LVTTL       :         : 2         : Y              
+switches[21]                 : 119       : input  : 3.3-V LVTTL       :         : 2         : Y              
+speaker[4]                   : 120       : output : 3.3-V LVTTL       :         : 2         : N              
+speaker[1]                   : 121       : output : 3.3-V LVTTL       :         : 2         : N              
+switches[22]                 : 122       : input  : 3.3-V LVTTL       :         : 2         : Y              
 GND                          : 123       : gnd    :                   :         :           :                
 VCCINT                       : 124       : power  :                   : 1.2V    :           :                
-switches[3]                  : 125       : input  : 3.3-V LVTTL       :         : 2         : N              
-speaker[15]                  : 126       : output : 3.3-V LVTTL       :         : 2         : N              
+switches[23]                 : 125       : input  : 3.3-V LVTTL       :         : 2         : Y              
+switches[24]                 : 126       : input  : 3.3-V LVTTL       :         : 2         : Y              
 VCCIO2                       : 127       : power  :                   : 3.3V    : 2         :                
 GND                          : 128       : gnd    :                   :         :           :                
-speaker[3]                   : 129       : output : 3.3-V LVTTL       :         : 2         : N              
+switches[25]                 : 129       : input  : 3.3-V LVTTL       :         : 2         : Y              
 GND                          : 130       : gnd    :                   :         :           :                
 VCCINT                       : 131       : power  :                   : 1.2V    :           :                
-speaker[16]                  : 132       : output : 3.3-V LVTTL       :         : 2         : N              
-switches[11]                 : 133       : input  : 3.3-V LVTTL       :         : 2         : N              
-speaker[11]                  : 134       : output : 3.3-V LVTTL       :         : 2         : N              
-speaker[8]                   : 135       : output : 3.3-V LVTTL       :         : 2         : N              
-speaker[10]                  : 136       : output : 3.3-V LVTTL       :         : 2         : N              
-speaker[29]                  : 137       : output : 3.3-V LVTTL       :         : 2         : N              
+switches[26]                 : 132       : input  : 3.3-V LVTTL       :         : 2         : Y              
+switches[27]                 : 133       : input  : 3.3-V LVTTL       :         : 2         : Y              
+switches[28]                 : 134       : input  : 3.3-V LVTTL       :         : 2         : Y              
+switches[29]                 : 135       : input  : 3.3-V LVTTL       :         : 2         : Y              
+switches[30]                 : 136       : input  : 3.3-V LVTTL       :         : 2         : Y              
+switches[31]                 : 137       : input  : 3.3-V LVTTL       :         : 2         : Y              
 VCCIO2                       : 138       : power  :                   : 3.3V    : 2         :                
-switches[5]                  : 139       : input  : 3.3-V LVTTL       :         : 2         : N              
+switches[32]                 : 139       : input  : 3.3-V LVTTL       :         : 2         : Y              
 GND                          : 140       : gnd    :                   :         :           :                
-GND*                         : 141       :        :                   :         : 2         :                
-speaker[1]                   : 142       : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : 143       :        :                   :         : 2         :                
-switches[4]                  : 144       : input  : 3.3-V LVTTL       :         : 2         : N              
+switches[33]                 : 141       : input  : 3.3-V LVTTL       :         : 2         : Y              
+switches[34]                 : 142       : input  : 3.3-V LVTTL       :         : 2         : Y              
+switches[35]                 : 143       : input  : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : 144       :        :                   :         : 2         :                

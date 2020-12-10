@@ -17,8 +17,10 @@ reg [n:0] counterC4,counterC4_s,counterD4,counterD4_s,counterE4,counterF4,counte
 reg [n:0] counterC5,counterC5_s,counterD5,counterD5_s,counterE5,counterF5,counterF5_s,counterG5,counterG5_s,counterA5,counterA5_s,counterB5;
 
 
+assign speaker[29:6] = switches[29:6]&flipper[29:6];
+// Overloading some pins due to output pin shortage
+assign speaker[35:30] = switches[35:30]&flipper[35:30] | switches[5:0]&flipper[5:0];
 
-assign speaker = switches & flipper;
 
 always @(posedge clk) begin
 
@@ -134,7 +136,7 @@ always @(posedge clk) begin
 	
 	if(counterA4_s==m*A4_s) begin
 		counterA4_s <= 0;
-		flipper[22] <= ~flipper[21];
+		flipper[22] <= ~flipper[22];
 	end else counterA4_s <= counterA4_s+1;
 
 	if(counterB4==m*B4) begin

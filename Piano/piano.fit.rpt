@@ -1,5 +1,5 @@
 Fitter report for piano
-Tue Dec 01 00:14:31 2020
+Thu Dec 10 19:51:58 2020
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -62,15 +62,15 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +------------------------------------+------------------------------------------+
-; Fitter Status                      ; Successful - Tue Dec 01 00:14:31 2020    ;
+; Fitter Status                      ; Successful - Thu Dec 10 19:51:58 2020    ;
 ; Quartus II Version                 ; 9.0 Build 132 02/25/2009 SJ Full Version ;
 ; Revision Name                      ; piano                                    ;
 ; Top-level Entity Name              ; piano                                    ;
 ; Family                             ; Cyclone II                               ;
 ; Device                             ; EP2C5T144C8                              ;
 ; Timing Models                      ; Final                                    ;
-; Total logic elements               ; 1,373 / 4,608 ( 30 % )                   ;
-;     Total combinational functions  ; 1,373 / 4,608 ( 30 % )                   ;
+; Total logic elements               ; 1,366 / 4,608 ( 30 % )                   ;
+;     Total combinational functions  ; 1,366 / 4,608 ( 30 % )                   ;
 ;     Dedicated logic registers      ; 792 / 4,608 ( 17 % )                     ;
 ; Total registers                    ; 792                                      ;
 ; Total pins                         ; 73 / 89 ( 82 % )                         ;
@@ -140,12 +140,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 2           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.25        ;
+; Average used               ; 1.40        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     1 processor            ; 100.0%      ;
-;     2 processors           ;  14.3%      ;
+;     2 processors           ;  25.0%      ;
 +----------------------------+-------------+
 
 
@@ -155,8 +155,8 @@ applicable agreement for further details.
 ; Type                    ; Value               ;
 +-------------------------+---------------------+
 ; Placement               ;                     ;
-;     -- Requested        ; 0 / 2238 ( 0.00 % ) ;
-;     -- Achieved         ; 0 / 2238 ( 0.00 % ) ;
+;     -- Requested        ; 0 / 2231 ( 0.00 % ) ;
+;     -- Achieved         ; 0 / 2231 ( 0.00 % ) ;
 ;                         ;                     ;
 ; Routing (by Connection) ;                     ;
 ;     -- Requested        ; 0 / 0 ( 0.00 % )    ;
@@ -178,14 +178,14 @@ applicable agreement for further details.
 +----------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +----------------+---------+-------------------+-------------------------+-------------------+
-; Top            ; 2238    ; 0                 ; N/A                     ; Source File       ;
+; Top            ; 2231    ; 0                 ; N/A                     ; Source File       ;
 +----------------+---------+-------------------+-------------------------+-------------------+
 
 
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in D:/Documents/BUET/My Files/DLD/DLD Project Proposals/Poor Mans Piano/Piano/piano.pin.
+The pin-out file can be found in D:/Projects/Poor-Mans-Piano/Piano/piano.pin.
 
 
 +----------------------------------------------------------------------+
@@ -193,19 +193,19 @@ The pin-out file can be found in D:/Documents/BUET/My Files/DLD/DLD Project Prop
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 1,373 / 4,608 ( 30 % ) ;
-;     -- Combinational with no register       ; 581                    ;
+; Total logic elements                        ; 1,366 / 4,608 ( 30 % ) ;
+;     -- Combinational with no register       ; 574                    ;
 ;     -- Register only                        ; 0                      ;
 ;     -- Combinational with a register        ; 792                    ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 580                    ;
+;     -- 4 input functions                    ; 586                    ;
 ;     -- 3 input functions                    ; 0                      ;
-;     -- <=2 input functions                  ; 793                    ;
+;     -- <=2 input functions                  ; 780                    ;
 ;     -- Register only                        ; 0                      ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 653                    ;
+;     -- normal mode                          ; 646                    ;
 ;     -- arithmetic mode                      ; 720                    ;
 ;                                             ;                        ;
 ; Total registers*                            ; 792 / 4,851 ( 16 % )   ;
@@ -216,7 +216,7 @@ The pin-out file can be found in D:/Documents/BUET/My Files/DLD/DLD Project Prop
 ; User inserted logic elements                ; 0                      ;
 ; Virtual pins                                ; 0                      ;
 ; I/O pins                                    ; 73 / 89 ( 82 % )       ;
-;     -- Clock pins                           ; 2 / 4 ( 50 % )         ;
+;     -- Clock pins                           ; 1 / 4 ( 25 % )         ;
 ; Global signals                              ; 1                      ;
 ; M4Ks                                        ; 0 / 26 ( 0 % )         ;
 ; Total block memory bits                     ; 0 / 119,808 ( 0 % )    ;
@@ -227,13 +227,13 @@ The pin-out file can be found in D:/Documents/BUET/My Files/DLD/DLD Project Prop
 ; JTAGs                                       ; 0 / 1 ( 0 % )          ;
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )          ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )          ;
-; Average interconnect usage (total/H/V)      ; 2% / 1% / 3%           ;
-; Peak interconnect usage (total/H/V)         ; 2% / 1% / 3%           ;
+; Average interconnect usage (total/H/V)      ; 3% / 2% / 4%           ;
+; Peak interconnect usage (total/H/V)         ; 3% / 2% / 4%           ;
 ; Maximum fan-out node                        ; clk~clkctrl            ;
 ; Maximum fan-out                             ; 792                    ;
 ; Highest non-global fan-out signal           ; counterA3[20]          ;
 ; Highest non-global fan-out                  ; 15                     ;
-; Total fan-out                               ; 5491                   ;
+; Total fan-out                               ; 5483                   ;
 ; Average fan-out                             ; 2.45                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
@@ -246,42 +246,42 @@ The pin-out file can be found in D:/Documents/BUET/My Files/DLD/DLD Project Prop
 ; Name         ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
 +--------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; clk          ; 17    ; 1        ; 0            ; 6            ; 0           ; 1                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; switches[0]  ; 30    ; 1        ; 0            ; 2            ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[10] ; 51    ; 4        ; 7            ; 0            ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[11] ; 133   ; 2        ; 7            ; 14           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[12] ; 44    ; 4        ; 3            ; 0            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[13] ; 119   ; 2        ; 21           ; 14           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[14] ; 40    ; 4        ; 1            ; 0            ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[15] ; 118   ; 2        ; 21           ; 14           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[16] ; 87    ; 3        ; 28           ; 6            ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[17] ; 75    ; 3        ; 28           ; 2            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[18] ; 97    ; 3        ; 28           ; 9            ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[19] ; 92    ; 3        ; 28           ; 8            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[1]  ; 43    ; 4        ; 3            ; 0            ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[20] ; 47    ; 4        ; 5            ; 0            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[21] ; 99    ; 3        ; 28           ; 11           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[22] ; 101   ; 3        ; 28           ; 11           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[23] ; 25    ; 1        ; 0            ; 5            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[24] ; 3     ; 1        ; 0            ; 13           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[25] ; 64    ; 4        ; 21           ; 0            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[26] ; 81    ; 3        ; 28           ; 5            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[27] ; 18    ; 1        ; 0            ; 6            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[28] ; 21    ; 1        ; 0            ; 6            ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[29] ; 22    ; 1        ; 0            ; 6            ; 3           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[2]  ; 86    ; 3        ; 28           ; 6            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[30] ; 53    ; 4        ; 9            ; 0            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; switches[31] ; 55    ; 4        ; 9            ; 0            ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; switches[32] ; 57    ; 4        ; 12           ; 0            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; switches[33] ; 58    ; 4        ; 12           ; 0            ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; switches[34] ; 59    ; 4        ; 14           ; 0            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; switches[35] ; 60    ; 4        ; 14           ; 0            ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; switches[3]  ; 125   ; 2        ; 14           ; 14           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[4]  ; 144   ; 2        ; 1            ; 14           ; 3           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[5]  ; 139   ; 2        ; 3            ; 14           ; 3           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[6]  ; 120   ; 2        ; 19           ; 14           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[7]  ; 115   ; 2        ; 24           ; 14           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[8]  ; 45    ; 4        ; 3            ; 0            ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; switches[9]  ; 79    ; 3        ; 28           ; 5            ; 4           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; switches[0]  ; 69    ; 4        ; 26           ; 0            ; 3           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[10] ; 94    ; 3        ; 28           ; 9            ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[11] ; 96    ; 3        ; 28           ; 9            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[12] ; 97    ; 3        ; 28           ; 9            ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[13] ; 99    ; 3        ; 28           ; 11           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[14] ; 100   ; 3        ; 28           ; 11           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[15] ; 101   ; 3        ; 28           ; 11           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[16] ; 103   ; 3        ; 28           ; 12           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[17] ; 104   ; 3        ; 28           ; 12           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[18] ; 114   ; 2        ; 26           ; 14           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[19] ; 115   ; 2        ; 24           ; 14           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[1]  ; 70    ; 4        ; 26           ; 0            ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[20] ; 118   ; 2        ; 21           ; 14           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[21] ; 119   ; 2        ; 21           ; 14           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[22] ; 122   ; 2        ; 19           ; 14           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[23] ; 125   ; 2        ; 14           ; 14           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[24] ; 126   ; 2        ; 14           ; 14           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[25] ; 129   ; 2        ; 12           ; 14           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[26] ; 132   ; 2        ; 9            ; 14           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[27] ; 133   ; 2        ; 7            ; 14           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[28] ; 134   ; 2        ; 7            ; 14           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[29] ; 135   ; 2        ; 3            ; 14           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[2]  ; 71    ; 4        ; 26           ; 0            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[30] ; 136   ; 2        ; 3            ; 14           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[31] ; 137   ; 2        ; 3            ; 14           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[32] ; 139   ; 2        ; 3            ; 14           ; 3           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[33] ; 141   ; 2        ; 1            ; 14           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[34] ; 142   ; 2        ; 1            ; 14           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[35] ; 143   ; 2        ; 1            ; 14           ; 2           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[3]  ; 72    ; 4        ; 26           ; 0            ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[4]  ; 74    ; 3        ; 28           ; 1            ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[5]  ; 75    ; 3        ; 28           ; 2            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[6]  ; 79    ; 3        ; 28           ; 5            ; 4           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[7]  ; 81    ; 3        ; 28           ; 5            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[8]  ; 92    ; 3        ; 28           ; 8            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; switches[9]  ; 93    ; 3        ; 28           ; 8            ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 +--------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -290,55 +290,55 @@ The pin-out file can be found in D:/Documents/BUET/My Files/DLD/DLD Project Prop
 +-------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+
 ; Name        ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load ;
 +-------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+
-; speaker[0]  ; 28    ; 1        ; 0            ; 4            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[10] ; 136   ; 2        ; 3            ; 14           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[11] ; 134   ; 2        ; 7            ; 14           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[12] ; 31    ; 1        ; 0            ; 2            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[13] ; 103   ; 3        ; 28           ; 12           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[14] ; 32    ; 1        ; 0            ; 2            ; 4           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[15] ; 126   ; 2        ; 14           ; 14           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[16] ; 132   ; 2        ; 9            ; 14           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[17] ; 73    ; 3        ; 28           ; 1            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[18] ; 94    ; 3        ; 28           ; 9            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[19] ; 112   ; 2        ; 26           ; 14           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[1]  ; 142   ; 2        ; 1            ; 14           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[20] ; 52    ; 4        ; 7            ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[21] ; 63    ; 4        ; 19           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[22] ; 100   ; 3        ; 28           ; 11           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[23] ; 80    ; 3        ; 28           ; 5            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[24] ; 9     ; 1        ; 0            ; 11           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[25] ; 26    ; 1        ; 0            ; 5            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[26] ; 93    ; 3        ; 28           ; 8            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[27] ; 48    ; 4        ; 5            ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[28] ; 8     ; 1        ; 0            ; 11           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[29] ; 137   ; 2        ; 3            ; 14           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[2]  ; 114   ; 2        ; 26           ; 14           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[30] ; 65    ; 4        ; 21           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
-; speaker[31] ; 67    ; 4        ; 24           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
-; speaker[32] ; 69    ; 4        ; 26           ; 0            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
-; speaker[33] ; 70    ; 4        ; 26           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
-; speaker[34] ; 71    ; 4        ; 26           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
-; speaker[35] ; 72    ; 4        ; 26           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
-; speaker[3]  ; 129   ; 2        ; 12           ; 14           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[4]  ; 42    ; 4        ; 1            ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[5]  ; 7     ; 1        ; 0            ; 11           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[6]  ; 121   ; 2        ; 19           ; 14           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[7]  ; 113   ; 2        ; 26           ; 14           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[8]  ; 135   ; 2        ; 3            ; 14           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[9]  ; 122   ; 2        ; 19           ; 14           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; speaker[0]  ; 27    ; 1        ; 0            ; 5            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; speaker[10] ; 63    ; 4        ; 19           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[11] ; 64    ; 4        ; 21           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[12] ; 65    ; 4        ; 21           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[13] ; 67    ; 4        ; 24           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[14] ; 4     ; 1        ; 0            ; 13           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[15] ; 7     ; 1        ; 0            ; 11           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[16] ; 8     ; 1        ; 0            ; 11           ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[17] ; 9     ; 1        ; 0            ; 11           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[18] ; 24    ; 1        ; 0            ; 5            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[19] ; 25    ; 1        ; 0            ; 5            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[1]  ; 121   ; 2        ; 19           ; 14           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; speaker[20] ; 28    ; 1        ; 0            ; 4            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[21] ; 30    ; 1        ; 0            ; 2            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[22] ; 31    ; 1        ; 0            ; 2            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[23] ; 32    ; 1        ; 0            ; 2            ; 4           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[24] ; 55    ; 4        ; 9            ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[25] ; 53    ; 4        ; 9            ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[26] ; 52    ; 4        ; 7            ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[27] ; 51    ; 4        ; 7            ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[28] ; 48    ; 4        ; 5            ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[29] ; 47    ; 4        ; 5            ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[2]  ; 112   ; 2        ; 26           ; 14           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; speaker[30] ; 45    ; 4        ; 3            ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[31] ; 44    ; 4        ; 3            ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[32] ; 43    ; 4        ; 3            ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[33] ; 42    ; 4        ; 1            ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[34] ; 41    ; 4        ; 1            ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[35] ; 40    ; 4        ; 1            ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[3]  ; 113   ; 2        ; 26           ; 14           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; speaker[4]  ; 120   ; 2        ; 19           ; 14           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; speaker[5]  ; 80    ; 3        ; 28           ; 5            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; speaker[6]  ; 57    ; 4        ; 12           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[7]  ; 58    ; 4        ; 12           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[8]  ; 59    ; 4        ; 14           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; speaker[9]  ; 60    ; 4        ; 14           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
 +-------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+
 
 
-+------------------------------------------------------------+
-; I/O Bank Usage                                             ;
-+----------+------------------+---------------+--------------+
-; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ;
-+----------+------------------+---------------+--------------+
-; 1        ; 16 / 19 ( 84 % ) ; 3.3V          ; --           ;
-; 2        ; 21 / 23 ( 91 % ) ; 3.3V          ; --           ;
-; 3        ; 16 / 23 ( 70 % ) ; 3.3V          ; --           ;
-; 4        ; 23 / 24 ( 96 % ) ; 3.3V          ; --           ;
-+----------+------------------+---------------+--------------+
++-------------------------------------------------------------+
+; I/O Bank Usage                                              ;
++----------+-------------------+---------------+--------------+
+; I/O Bank ; Usage             ; VCCIO Voltage ; VREF Voltage ;
++----------+-------------------+---------------+--------------+
+; 1        ; 14 / 19 ( 74 % )  ; 3.3V          ; --           ;
+; 2        ; 22 / 23 ( 96 % )  ; 3.3V          ; --           ;
+; 3        ; 16 / 23 ( 70 % )  ; 3.3V          ; --           ;
+; 4        ; 24 / 24 ( 100 % ) ; 3.3V          ; --           ;
++----------+-------------------+---------------+--------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -348,13 +348,13 @@ The pin-out file can be found in D:/Documents/BUET/My Files/DLD/DLD Project Prop
 +----------+------------+----------+------------------------------------------+--------+--------------+---------+------------+-----------------+----------+--------------+
 ; 1        ; 0          ; 1        ; ~ASDO~ / RESERVED_INPUT_WITH_WEAK_PULLUP ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; On           ;
 ; 2        ; 1          ; 1        ; ~nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; On           ;
-; 3        ; 2          ; 1        ; switches[24]                             ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 4        ; 3          ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 3        ; 2          ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 4        ; 3          ; 1        ; speaker[14]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 5        ;            ; 1        ; VCCIO1                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; 6        ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; 7        ; 10         ; 1        ; speaker[5]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 8        ; 11         ; 1        ; speaker[28]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 9        ; 12         ; 1        ; speaker[24]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 7        ; 10         ; 1        ; speaker[15]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 8        ; 11         ; 1        ; speaker[16]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 9        ; 12         ; 1        ; speaker[17]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 10       ; 13         ; 1        ; #TDO                                     ; output ;              ;         ; --         ;                 ; --       ; --           ;
 ; 11       ; 14         ; 1        ; #TMS                                     ; input  ;              ;         ; --         ;                 ; --       ; --           ;
 ; 12       ; 15         ; 1        ; #TCK                                     ; input  ;              ;         ; --         ;                 ; --       ; --           ;
@@ -363,21 +363,21 @@ The pin-out file can be found in D:/Documents/BUET/My Files/DLD/DLD Project Prop
 ; 15       ; 18         ; 1        ; ^DCLK                                    ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; 16       ; 19         ; 1        ; ^nCE                                     ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; 17       ; 20         ; 1        ; clk                                      ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; 18       ; 21         ; 1        ; switches[27]                             ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 18       ; 21         ; 1        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; 19       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 20       ; 22         ; 1        ; ^nCONFIG                                 ;        ;              ;         ; --         ;                 ; --       ; --           ;
-; 21       ; 23         ; 1        ; switches[28]                             ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 22       ; 24         ; 1        ; switches[29]                             ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 21       ; 23         ; 1        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; 22       ; 24         ; 1        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; 23       ;            ; 1        ; VCCIO1                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; 24       ; 25         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; 25       ; 26         ; 1        ; switches[23]                             ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 26       ; 27         ; 1        ; speaker[25]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 27       ; 28         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; 28       ; 32         ; 1        ; speaker[0]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 24       ; 25         ; 1        ; speaker[18]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 25       ; 26         ; 1        ; speaker[19]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 26       ; 27         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 27       ; 28         ; 1        ; speaker[0]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 28       ; 32         ; 1        ; speaker[20]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 29       ;            ; 1        ; VCCIO1                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; 30       ; 40         ; 1        ; switches[0]                              ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 31       ; 41         ; 1        ; speaker[12]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 32       ; 42         ; 1        ; speaker[14]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 30       ; 40         ; 1        ; speaker[21]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 31       ; 41         ; 1        ; speaker[22]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 32       ; 42         ; 1        ; speaker[23]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 33       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 34       ;            ;          ; GND_PLL1                                 ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 35       ;            ;          ; VCCD_PLL1                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -385,71 +385,71 @@ The pin-out file can be found in D:/Documents/BUET/My Files/DLD/DLD Project Prop
 ; 37       ;            ;          ; VCCA_PLL1                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; 38       ;            ;          ; GNDA_PLL1                                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 39       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; 40       ; 43         ; 4        ; switches[14]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 41       ; 44         ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; 42       ; 45         ; 4        ; speaker[4]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 43       ; 46         ; 4        ; switches[1]                              ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 44       ; 47         ; 4        ; switches[12]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 45       ; 48         ; 4        ; switches[8]                              ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 40       ; 43         ; 4        ; speaker[35]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 41       ; 44         ; 4        ; speaker[34]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 42       ; 45         ; 4        ; speaker[33]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 43       ; 46         ; 4        ; speaker[32]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 44       ; 47         ; 4        ; speaker[31]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 45       ; 48         ; 4        ; speaker[30]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 46       ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; 47       ; 49         ; 4        ; switches[20]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 48       ; 50         ; 4        ; speaker[27]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 47       ; 49         ; 4        ; speaker[29]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 48       ; 50         ; 4        ; speaker[28]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 49       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 50       ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; 51       ; 52         ; 4        ; switches[10]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 52       ; 53         ; 4        ; speaker[20]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 53       ; 57         ; 4        ; switches[30]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 51       ; 52         ; 4        ; speaker[27]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 52       ; 53         ; 4        ; speaker[26]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 53       ; 57         ; 4        ; speaker[25]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 54       ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; 55       ; 58         ; 4        ; switches[31]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 55       ; 58         ; 4        ; speaker[24]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 56       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; 57       ; 59         ; 4        ; switches[32]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
-; 58       ; 60         ; 4        ; switches[33]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
-; 59       ; 63         ; 4        ; switches[34]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
-; 60       ; 64         ; 4        ; switches[35]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 57       ; 59         ; 4        ; speaker[6]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 58       ; 60         ; 4        ; speaker[7]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 59       ; 63         ; 4        ; speaker[8]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 60       ; 64         ; 4        ; speaker[9]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 61       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 62       ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; 63       ; 72         ; 4        ; speaker[21]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 64       ; 75         ; 4        ; switches[25]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 65       ; 76         ; 4        ; speaker[30]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 63       ; 72         ; 4        ; speaker[10]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 64       ; 75         ; 4        ; speaker[11]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 65       ; 76         ; 4        ; speaker[12]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 66       ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; 67       ; 79         ; 4        ; speaker[31]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 67       ; 79         ; 4        ; speaker[13]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 68       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; 69       ; 80         ; 4        ; speaker[32]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
-; 70       ; 81         ; 4        ; speaker[33]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
-; 71       ; 82         ; 4        ; speaker[34]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
-; 72       ; 83         ; 4        ; speaker[35]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
-; 73       ; 84         ; 3        ; speaker[17]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 74       ; 85         ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; 75       ; 86         ; 3        ; switches[17]                             ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 69       ; 80         ; 4        ; switches[0]                              ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 70       ; 81         ; 4        ; switches[1]                              ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 71       ; 82         ; 4        ; switches[2]                              ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 72       ; 83         ; 4        ; switches[3]                              ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 73       ; 84         ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 74       ; 85         ; 3        ; switches[4]                              ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 75       ; 86         ; 3        ; switches[5]                              ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 76       ; 87         ; 3        ; ~LVDS41p/nCEO~                           ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; 77       ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; 78       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; 79       ; 95         ; 3        ; switches[9]                              ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 80       ; 97         ; 3        ; speaker[23]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 81       ; 98         ; 3        ; switches[26]                             ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 79       ; 95         ; 3        ; switches[6]                              ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 80       ; 97         ; 3        ; speaker[5]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 81       ; 98         ; 3        ; switches[7]                              ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 82       ; 99         ; 3        ; ^nSTATUS                                 ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; 83       ; 100        ; 3        ; ^CONF_DONE                               ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; 84       ; 101        ; 3        ; ^MSEL1                                   ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; 85       ; 102        ; 3        ; ^MSEL0                                   ;        ;              ;         ; --         ;                 ; --       ; --           ;
-; 86       ; 103        ; 3        ; switches[2]                              ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 87       ; 104        ; 3        ; switches[16]                             ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 86       ; 103        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 87       ; 104        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; 88       ; 105        ; 3        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; 89       ; 106        ; 3        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; 90       ; 107        ; 3        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; 91       ; 108        ; 3        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; 92       ; 109        ; 3        ; switches[19]                             ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 93       ; 110        ; 3        ; speaker[26]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 94       ; 111        ; 3        ; speaker[18]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 92       ; 109        ; 3        ; switches[8]                              ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 93       ; 110        ; 3        ; switches[9]                              ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 94       ; 111        ; 3        ; switches[10]                             ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 95       ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; 96       ; 112        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; 97       ; 113        ; 3        ; switches[18]                             ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 96       ; 112        ; 3        ; switches[11]                             ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 97       ; 113        ; 3        ; switches[12]                             ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 98       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; 99       ; 119        ; 3        ; switches[21]                             ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 100      ; 120        ; 3        ; speaker[22]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 101      ; 121        ; 3        ; switches[22]                             ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 99       ; 119        ; 3        ; switches[13]                             ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 100      ; 120        ; 3        ; switches[14]                             ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 101      ; 121        ; 3        ; switches[15]                             ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 102      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; 103      ; 125        ; 3        ; speaker[13]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
-; 104      ; 126        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 103      ; 125        ; 3        ; switches[16]                             ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 104      ; 126        ; 3        ; switches[17]                             ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 105      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 106      ;            ;          ; GND_PLL2                                 ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 107      ;            ;          ; VCCD_PLL2                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -457,39 +457,39 @@ The pin-out file can be found in D:/Documents/BUET/My Files/DLD/DLD Project Prop
 ; 109      ;            ;          ; VCCA_PLL2                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; 110      ;            ;          ; GNDA_PLL2                                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 111      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; 112      ; 127        ; 2        ; speaker[19]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 113      ; 128        ; 2        ; speaker[7]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 114      ; 129        ; 2        ; speaker[2]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 115      ; 130        ; 2        ; switches[7]                              ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 112      ; 127        ; 2        ; speaker[2]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 113      ; 128        ; 2        ; speaker[3]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 114      ; 129        ; 2        ; switches[18]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 115      ; 130        ; 2        ; switches[19]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 116      ;            ; 2        ; VCCIO2                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; 117      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; 118      ; 134        ; 2        ; switches[15]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 119      ; 135        ; 2        ; switches[13]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 120      ; 137        ; 2        ; switches[6]                              ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 121      ; 138        ; 2        ; speaker[6]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 122      ; 139        ; 2        ; speaker[9]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 118      ; 134        ; 2        ; switches[20]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 119      ; 135        ; 2        ; switches[21]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 120      ; 137        ; 2        ; speaker[4]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 121      ; 138        ; 2        ; speaker[1]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 122      ; 139        ; 2        ; switches[22]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 123      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 124      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; 125      ; 144        ; 2        ; switches[3]                              ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 126      ; 145        ; 2        ; speaker[15]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 125      ; 144        ; 2        ; switches[23]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 126      ; 145        ; 2        ; switches[24]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 127      ;            ; 2        ; VCCIO2                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; 128      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; 129      ; 148        ; 2        ; speaker[3]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 129      ; 148        ; 2        ; switches[25]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 130      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 131      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
-; 132      ; 153        ; 2        ; speaker[16]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 133      ; 154        ; 2        ; switches[11]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 134      ; 155        ; 2        ; speaker[11]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 135      ; 162        ; 2        ; speaker[8]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 136      ; 163        ; 2        ; speaker[10]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 137      ; 164        ; 2        ; speaker[29]                              ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 132      ; 153        ; 2        ; switches[26]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 133      ; 154        ; 2        ; switches[27]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 134      ; 155        ; 2        ; switches[28]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 135      ; 162        ; 2        ; switches[29]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 136      ; 163        ; 2        ; switches[30]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 137      ; 164        ; 2        ; switches[31]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 138      ;            ; 2        ; VCCIO2                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; 139      ; 165        ; 2        ; switches[5]                              ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 139      ; 165        ; 2        ; switches[32]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 140      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; 141      ; 166        ; 2        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; 142      ; 167        ; 2        ; speaker[1]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 143      ; 168        ; 2        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; 144      ; 169        ; 2        ; switches[4]                              ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 141      ; 166        ; 2        ; switches[33]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 142      ; 167        ; 2        ; switches[34]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 143      ; 168        ; 2        ; switches[35]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; 144      ; 169        ; 2        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 +----------+------------+----------+------------------------------------------+--------+--------------+---------+------------+-----------------+----------+--------------+
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
 
@@ -536,7 +536,7 @@ Note: User assignments will override these defaults. The user specified values a
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
-; |piano                     ; 1373 (1373) ; 792 (792)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 73   ; 0            ; 581 (581)    ; 0 (0)             ; 792 (792)        ; |piano              ; work         ;
+; |piano                     ; 1366 (1366) ; 792 (792)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 73   ; 0            ; 574 (574)    ; 0 (0)             ; 792 (792)        ; |piano              ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -582,12 +582,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; speaker[33]  ; Output   ; --            ; --            ; --                    ; --  ;
 ; speaker[34]  ; Output   ; --            ; --            ; --                    ; --  ;
 ; speaker[35]  ; Output   ; --            ; --            ; --                    ; --  ;
-; switches[0]  ; Input    ; 6             ; 6             ; --                    ; --  ;
-; switches[1]  ; Input    ; 6             ; 6             ; --                    ; --  ;
-; switches[2]  ; Input    ; 6             ; 6             ; --                    ; --  ;
-; switches[3]  ; Input    ; 6             ; 6             ; --                    ; --  ;
-; switches[4]  ; Input    ; 6             ; 6             ; --                    ; --  ;
-; switches[5]  ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; switches[6]  ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; switches[7]  ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; switches[8]  ; Input    ; 6             ; 6             ; --                    ; --  ;
@@ -609,14 +603,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; switches[24] ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; switches[25] ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; switches[26] ; Input    ; 6             ; 6             ; --                    ; --  ;
-; switches[27] ; Input    ; 0             ; 0             ; --                    ; --  ;
-; switches[28] ; Input    ; 0             ; 0             ; --                    ; --  ;
-; switches[29] ; Input    ; 0             ; 0             ; --                    ; --  ;
+; switches[27] ; Input    ; 6             ; 6             ; --                    ; --  ;
+; switches[28] ; Input    ; 6             ; 6             ; --                    ; --  ;
+; switches[29] ; Input    ; 6             ; 6             ; --                    ; --  ;
+; switches[0]  ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; switches[30] ; Input    ; 6             ; 6             ; --                    ; --  ;
+; switches[1]  ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; switches[31] ; Input    ; 6             ; 6             ; --                    ; --  ;
+; switches[2]  ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; switches[32] ; Input    ; 6             ; 6             ; --                    ; --  ;
+; switches[3]  ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; switches[33] ; Input    ; 6             ; 6             ; --                    ; --  ;
+; switches[4]  ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; switches[34] ; Input    ; 6             ; 6             ; --                    ; --  ;
+; switches[5]  ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; switches[35] ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; clk          ; Input    ; 0             ; 0             ; --                    ; --  ;
 +--------------+----------+---------------+---------------+-----------------------+-----+
@@ -627,75 +627,78 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------------+---------+
 ; Source Pin / Fanout ; Pad To Core Index ; Setting ;
 +---------------------+-------------------+---------+
-; switches[0]         ;                   ;         ;
-;      - speaker~0    ; 0                 ; 6       ;
-; switches[1]         ;                   ;         ;
-;      - speaker~1    ; 0                 ; 6       ;
-; switches[2]         ;                   ;         ;
-;      - speaker~2    ; 0                 ; 6       ;
-; switches[3]         ;                   ;         ;
-;      - speaker~3    ; 1                 ; 6       ;
-; switches[4]         ;                   ;         ;
-;      - speaker~4    ; 1                 ; 6       ;
-; switches[5]         ;                   ;         ;
-;      - speaker~5    ; 0                 ; 6       ;
 ; switches[6]         ;                   ;         ;
-;      - speaker~6    ; 0                 ; 6       ;
+;      - speaker~0    ; 1                 ; 6       ;
 ; switches[7]         ;                   ;         ;
-;      - speaker~7    ; 0                 ; 6       ;
+;      - speaker~1    ; 1                 ; 6       ;
 ; switches[8]         ;                   ;         ;
-;      - speaker~8    ; 0                 ; 6       ;
+;      - speaker~2    ; 1                 ; 6       ;
 ; switches[9]         ;                   ;         ;
-;      - speaker~9    ; 1                 ; 6       ;
+;      - speaker~3    ; 0                 ; 6       ;
 ; switches[10]        ;                   ;         ;
-;      - speaker~10   ; 0                 ; 6       ;
+;      - speaker~4    ; 0                 ; 6       ;
 ; switches[11]        ;                   ;         ;
-;      - speaker~11   ; 0                 ; 6       ;
+;      - speaker~5    ; 1                 ; 6       ;
 ; switches[12]        ;                   ;         ;
-;      - speaker~12   ; 0                 ; 6       ;
+;      - speaker~6    ; 0                 ; 6       ;
 ; switches[13]        ;                   ;         ;
-;      - speaker~13   ; 0                 ; 6       ;
+;      - speaker~7    ; 0                 ; 6       ;
 ; switches[14]        ;                   ;         ;
-;      - speaker~14   ; 0                 ; 6       ;
+;      - speaker~8    ; 1                 ; 6       ;
 ; switches[15]        ;                   ;         ;
-;      - speaker~15   ; 0                 ; 6       ;
+;      - speaker~9    ; 1                 ; 6       ;
 ; switches[16]        ;                   ;         ;
-;      - speaker~16   ; 0                 ; 6       ;
+;      - speaker~10   ; 1                 ; 6       ;
 ; switches[17]        ;                   ;         ;
-;      - speaker~17   ; 0                 ; 6       ;
+;      - speaker~11   ; 0                 ; 6       ;
 ; switches[18]        ;                   ;         ;
-;      - speaker~18   ; 1                 ; 6       ;
+;      - speaker~12   ; 1                 ; 6       ;
 ; switches[19]        ;                   ;         ;
-;      - speaker~19   ; 1                 ; 6       ;
+;      - speaker~13   ; 1                 ; 6       ;
 ; switches[20]        ;                   ;         ;
-;      - speaker~20   ; 0                 ; 6       ;
+;      - speaker~14   ; 0                 ; 6       ;
 ; switches[21]        ;                   ;         ;
-;      - speaker~21   ; 0                 ; 6       ;
+;      - speaker~15   ; 0                 ; 6       ;
 ; switches[22]        ;                   ;         ;
-;      - speaker~22   ; 0                 ; 6       ;
+;      - speaker~16   ; 1                 ; 6       ;
 ; switches[23]        ;                   ;         ;
-;      - speaker~23   ; 1                 ; 6       ;
+;      - speaker~17   ; 1                 ; 6       ;
 ; switches[24]        ;                   ;         ;
-;      - speaker~24   ; 0                 ; 6       ;
+;      - speaker~18   ; 1                 ; 6       ;
 ; switches[25]        ;                   ;         ;
-;      - speaker~25   ; 0                 ; 6       ;
+;      - speaker~19   ; 0                 ; 6       ;
 ; switches[26]        ;                   ;         ;
-;      - speaker~26   ; 1                 ; 6       ;
+;      - speaker~20   ; 0                 ; 6       ;
 ; switches[27]        ;                   ;         ;
+;      - speaker~21   ; 0                 ; 6       ;
 ; switches[28]        ;                   ;         ;
+;      - speaker~22   ; 0                 ; 6       ;
 ; switches[29]        ;                   ;         ;
+;      - speaker~23   ; 1                 ; 6       ;
+; switches[0]         ;                   ;         ;
+;      - speaker~36   ; 1                 ; 6       ;
 ; switches[30]        ;                   ;         ;
-;      - speaker~30   ; 0                 ; 6       ;
+;      - speaker~36   ; 1                 ; 6       ;
+; switches[1]         ;                   ;         ;
+;      - speaker~37   ; 0                 ; 6       ;
 ; switches[31]        ;                   ;         ;
-;      - speaker~31   ; 1                 ; 6       ;
+;      - speaker~37   ; 0                 ; 6       ;
+; switches[2]         ;                   ;         ;
+;      - speaker~38   ; 1                 ; 6       ;
 ; switches[32]        ;                   ;         ;
-;      - speaker~32   ; 1                 ; 6       ;
+;      - speaker~38   ; 1                 ; 6       ;
+; switches[3]         ;                   ;         ;
+;      - speaker~39   ; 0                 ; 6       ;
 ; switches[33]        ;                   ;         ;
-;      - speaker~33   ; 0                 ; 6       ;
+;      - speaker~39   ; 0                 ; 6       ;
+; switches[4]         ;                   ;         ;
+;      - speaker~40   ; 0                 ; 6       ;
 ; switches[34]        ;                   ;         ;
-;      - speaker~34   ; 1                 ; 6       ;
+;      - speaker~40   ; 0                 ; 6       ;
+; switches[5]         ;                   ;         ;
+;      - speaker~41   ; 1                 ; 6       ;
 ; switches[35]        ;                   ;         ;
-;      - speaker~35   ; 0                 ; 6       ;
+;      - speaker~41   ; 0                 ; 6       ;
 ; clk                 ;                   ;         ;
 +---------------------+-------------------+---------+
 
@@ -724,14 +727,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name            ; Fan-Out       ;
 +-----------------+---------------+
 ; counterA3[20]   ; 15            ;
+; counterD3_s[20] ; 14            ;
+; counterC3[20]   ; 14            ;
 ; counterD4_s[20] ; 14            ;
 ; counterC4[20]   ; 14            ;
 ; Equal9~5        ; 14            ;
 ; Equal9~4        ; 14            ;
 ; counterG3[20]   ; 14            ;
 ; counterF3_s[20] ; 14            ;
-; counterD3_s[20] ; 14            ;
-; counterC3[20]   ; 14            ;
+; Equal3~5        ; 13            ;
+; Equal3~4        ; 13            ;
+; Equal0~5        ; 13            ;
+; Equal0~4        ; 13            ;
 ; counterF4_s[20] ; 13            ;
 ; Equal15~5       ; 13            ;
 ; Equal15~4       ; 13            ;
@@ -741,10 +748,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Equal7~4        ; 13            ;
 ; Equal6~5        ; 13            ;
 ; Equal6~4        ; 13            ;
-; Equal3~5        ; 13            ;
-; Equal3~4        ; 13            ;
-; Equal0~5        ; 13            ;
-; Equal0~4        ; 13            ;
 ; counterA5[0]    ; 12            ;
 ; counterG5[0]    ; 12            ;
 ; counterC5[0]    ; 12            ;
@@ -754,6 +757,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Equal18~4       ; 12            ;
 ; counterD4[20]   ; 12            ;
 ; counterA3_s[20] ; 12            ;
+; counterF3[20]   ; 11            ;
 ; Equal33~5       ; 11            ;
 ; Equal33~4       ; 11            ;
 ; counterG5_s[0]  ; 11            ;
@@ -772,7 +776,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Equal14~5       ; 11            ;
 ; Equal14~4       ; 11            ;
 ; Equal10~5       ; 11            ;
-; Equal10~4       ; 11            ;
 +-----------------+---------------+
 
 
@@ -781,36 +784,36 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------+------------------------+
 ; Interconnect Resource Type ; Usage                  ;
 +----------------------------+------------------------+
-; Block interconnects        ; 990 / 15,666 ( 6 % )   ;
-; C16 interconnects          ; 8 / 812 ( < 1 % )      ;
-; C4 interconnects           ; 418 / 11,424 ( 4 % )   ;
-; Direct links               ; 445 / 15,666 ( 3 % )   ;
+; Block interconnects        ; 994 / 15,666 ( 6 % )   ;
+; C16 interconnects          ; 21 / 812 ( 3 % )       ;
+; C4 interconnects           ; 484 / 11,424 ( 4 % )   ;
+; Direct links               ; 413 / 15,666 ( 3 % )   ;
 ; Global clocks              ; 1 / 8 ( 13 % )         ;
-; Local interconnects        ; 1,050 / 4,608 ( 23 % ) ;
-; R24 interconnects          ; 10 / 652 ( 2 % )       ;
-; R4 interconnects           ; 220 / 13,328 ( 2 % )   ;
+; Local interconnects        ; 1,039 / 4,608 ( 23 % ) ;
+; R24 interconnects          ; 28 / 652 ( 4 % )       ;
+; R4 interconnects           ; 230 / 13,328 ( 2 % )   ;
 +----------------------------+------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                          ;
 +---------------------------------------------+-------------------------------+
-; Number of Logic Elements  (Average = 11.44) ; Number of LABs  (Total = 120) ;
+; Number of Logic Elements  (Average = 11.38) ; Number of LABs  (Total = 120) ;
 +---------------------------------------------+-------------------------------+
-; 1                                           ; 15                            ;
+; 1                                           ; 19                            ;
 ; 2                                           ; 1                             ;
-; 3                                           ; 3                             ;
-; 4                                           ; 5                             ;
-; 5                                           ; 4                             ;
-; 6                                           ; 6                             ;
-; 7                                           ; 5                             ;
+; 3                                           ; 2                             ;
+; 4                                           ; 3                             ;
+; 5                                           ; 2                             ;
+; 6                                           ; 7                             ;
+; 7                                           ; 4                             ;
 ; 8                                           ; 1                             ;
-; 9                                           ; 6                             ;
+; 9                                           ; 7                             ;
 ; 10                                          ; 1                             ;
 ; 11                                          ; 0                             ;
-; 12                                          ; 1                             ;
+; 12                                          ; 0                             ;
 ; 13                                          ; 0                             ;
-; 14                                          ; 0                             ;
+; 14                                          ; 1                             ;
 ; 15                                          ; 0                             ;
 ; 16                                          ; 72                            ;
 +---------------------------------------------+-------------------------------+
@@ -819,95 +822,104 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------+
 ; LAB-wide Signals                                                   ;
 +------------------------------------+-------------------------------+
-; LAB-wide Signals  (Average = 0.88) ; Number of LABs  (Total = 120) ;
+; LAB-wide Signals  (Average = 0.85) ; Number of LABs  (Total = 120) ;
 +------------------------------------+-------------------------------+
-; 1 Clock                            ; 106                           ;
+; 1 Clock                            ; 102                           ;
 +------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Signals Sourced  (Average = 18.04) ; Number of LABs  (Total = 120) ;
+; Number of Signals Sourced  (Average = 17.98) ; Number of LABs  (Total = 120) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
-; 1                                            ; 14                            ;
+; 1                                            ; 18                            ;
 ; 2                                            ; 1                             ;
 ; 3                                            ; 0                             ;
 ; 4                                            ; 3                             ;
-; 5                                            ; 1                             ;
+; 5                                            ; 0                             ;
 ; 6                                            ; 3                             ;
-; 7                                            ; 4                             ;
-; 8                                            ; 2                             ;
+; 7                                            ; 0                             ;
+; 8                                            ; 1                             ;
 ; 9                                            ; 1                             ;
-; 10                                           ; 4                             ;
-; 11                                           ; 5                             ;
-; 12                                           ; 1                             ;
-; 13                                           ; 1                             ;
-; 14                                           ; 1                             ;
+; 10                                           ; 6                             ;
+; 11                                           ; 2                             ;
+; 12                                           ; 2                             ;
+; 13                                           ; 2                             ;
+; 14                                           ; 3                             ;
 ; 15                                           ; 3                             ;
-; 16                                           ; 2                             ;
+; 16                                           ; 1                             ;
 ; 17                                           ; 1                             ;
-; 18                                           ; 1                             ;
-; 19                                           ; 0                             ;
+; 18                                           ; 0                             ;
+; 19                                           ; 1                             ;
 ; 20                                           ; 2                             ;
 ; 21                                           ; 1                             ;
-; 22                                           ; 6                             ;
-; 23                                           ; 2                             ;
+; 22                                           ; 2                             ;
+; 23                                           ; 6                             ;
 ; 24                                           ; 6                             ;
-; 25                                           ; 16                            ;
-; 26                                           ; 21                            ;
-; 27                                           ; 18                            ;
+; 25                                           ; 17                            ;
+; 26                                           ; 22                            ;
+; 27                                           ; 13                            ;
+; 28                                           ; 2                             ;
+; 29                                           ; 1                             ;
 +----------------------------------------------+-------------------------------+
 
 
 +---------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                         ;
 +-------------------------------------------------+-------------------------------+
-; Number of Signals Sourced Out  (Average = 5.39) ; Number of LABs  (Total = 120) ;
+; Number of Signals Sourced Out  (Average = 5.54) ; Number of LABs  (Total = 120) ;
 +-------------------------------------------------+-------------------------------+
 ; 0                                               ; 0                             ;
-; 1                                               ; 15                            ;
-; 2                                               ; 5                             ;
-; 3                                               ; 8                             ;
-; 4                                               ; 14                            ;
-; 5                                               ; 14                            ;
-; 6                                               ; 14                            ;
-; 7                                               ; 22                            ;
-; 8                                               ; 21                            ;
-; 9                                               ; 6                             ;
+; 1                                               ; 19                            ;
+; 2                                               ; 4                             ;
+; 3                                               ; 3                             ;
+; 4                                               ; 17                            ;
+; 5                                               ; 9                             ;
+; 6                                               ; 15                            ;
+; 7                                               ; 25                            ;
+; 8                                               ; 19                            ;
+; 9                                               ; 3                             ;
 ; 10                                              ; 0                             ;
-; 11                                              ; 0                             ;
-; 12                                              ; 1                             ;
+; 11                                              ; 2                             ;
+; 12                                              ; 3                             ;
+; 13                                              ; 0                             ;
+; 14                                              ; 1                             ;
 +-------------------------------------------------+-------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +---------------------------------------------+-------------------------------+
-; Number of Distinct Inputs  (Average = 7.58) ; Number of LABs  (Total = 120) ;
+; Number of Distinct Inputs  (Average = 7.72) ; Number of LABs  (Total = 120) ;
 +---------------------------------------------+-------------------------------+
 ; 0                                           ; 0                             ;
 ; 1                                           ; 0                             ;
-; 2                                           ; 5                             ;
-; 3                                           ; 7                             ;
-; 4                                           ; 21                            ;
-; 5                                           ; 9                             ;
+; 2                                           ; 7                             ;
+; 3                                           ; 6                             ;
+; 4                                           ; 24                            ;
+; 5                                           ; 6                             ;
 ; 6                                           ; 11                            ;
 ; 7                                           ; 9                             ;
-; 8                                           ; 20                            ;
-; 9                                           ; 6                             ;
-; 10                                          ; 4                             ;
-; 11                                          ; 8                             ;
-; 12                                          ; 6                             ;
-; 13                                          ; 4                             ;
-; 14                                          ; 6                             ;
-; 15                                          ; 2                             ;
-; 16                                          ; 0                             ;
+; 8                                           ; 15                            ;
+; 9                                           ; 14                            ;
+; 10                                          ; 2                             ;
+; 11                                          ; 7                             ;
+; 12                                          ; 4                             ;
+; 13                                          ; 1                             ;
+; 14                                          ; 4                             ;
+; 15                                          ; 3                             ;
+; 16                                          ; 2                             ;
 ; 17                                          ; 0                             ;
-; 18                                          ; 0                             ;
-; 19                                          ; 0                             ;
-; 20                                          ; 2                             ;
+; 18                                          ; 1                             ;
+; 19                                          ; 1                             ;
+; 20                                          ; 1                             ;
+; 21                                          ; 1                             ;
+; 22                                          ; 0                             ;
+; 23                                          ; 0                             ;
+; 24                                          ; 0                             ;
+; 25                                          ; 1                             ;
 +---------------------------------------------+-------------------------------+
 
 
@@ -953,7 +965,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
-    Info: Processing started: Tue Dec 01 00:14:24 2020
+    Info: Processing started: Thu Dec 10 19:51:54 2020
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off piano -c piano
 Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info: Selected device EP2C5T144C8 for design "piano"
@@ -968,67 +980,13 @@ Info: Fitter converted 3 user pins into dedicated programming pins
     Info: Pin ~ASDO~ is reserved at location 1
     Info: Pin ~nCSO~ is reserved at location 2
     Info: Pin ~LVDS41p/nCEO~ is reserved at location 76
-Warning: No exact pin location assignment(s) for 60 pins of 73 total pins
+Warning: No exact pin location assignment(s) for 6 pins of 73 total pins
     Info: Pin speaker[0] not assigned to an exact location on the device
     Info: Pin speaker[1] not assigned to an exact location on the device
     Info: Pin speaker[2] not assigned to an exact location on the device
     Info: Pin speaker[3] not assigned to an exact location on the device
     Info: Pin speaker[4] not assigned to an exact location on the device
     Info: Pin speaker[5] not assigned to an exact location on the device
-    Info: Pin speaker[6] not assigned to an exact location on the device
-    Info: Pin speaker[7] not assigned to an exact location on the device
-    Info: Pin speaker[8] not assigned to an exact location on the device
-    Info: Pin speaker[9] not assigned to an exact location on the device
-    Info: Pin speaker[10] not assigned to an exact location on the device
-    Info: Pin speaker[11] not assigned to an exact location on the device
-    Info: Pin speaker[12] not assigned to an exact location on the device
-    Info: Pin speaker[13] not assigned to an exact location on the device
-    Info: Pin speaker[14] not assigned to an exact location on the device
-    Info: Pin speaker[15] not assigned to an exact location on the device
-    Info: Pin speaker[16] not assigned to an exact location on the device
-    Info: Pin speaker[17] not assigned to an exact location on the device
-    Info: Pin speaker[18] not assigned to an exact location on the device
-    Info: Pin speaker[19] not assigned to an exact location on the device
-    Info: Pin speaker[20] not assigned to an exact location on the device
-    Info: Pin speaker[21] not assigned to an exact location on the device
-    Info: Pin speaker[22] not assigned to an exact location on the device
-    Info: Pin speaker[23] not assigned to an exact location on the device
-    Info: Pin speaker[24] not assigned to an exact location on the device
-    Info: Pin speaker[25] not assigned to an exact location on the device
-    Info: Pin speaker[26] not assigned to an exact location on the device
-    Info: Pin speaker[27] not assigned to an exact location on the device
-    Info: Pin speaker[28] not assigned to an exact location on the device
-    Info: Pin speaker[29] not assigned to an exact location on the device
-    Info: Pin switches[0] not assigned to an exact location on the device
-    Info: Pin switches[1] not assigned to an exact location on the device
-    Info: Pin switches[2] not assigned to an exact location on the device
-    Info: Pin switches[3] not assigned to an exact location on the device
-    Info: Pin switches[4] not assigned to an exact location on the device
-    Info: Pin switches[5] not assigned to an exact location on the device
-    Info: Pin switches[6] not assigned to an exact location on the device
-    Info: Pin switches[7] not assigned to an exact location on the device
-    Info: Pin switches[8] not assigned to an exact location on the device
-    Info: Pin switches[9] not assigned to an exact location on the device
-    Info: Pin switches[10] not assigned to an exact location on the device
-    Info: Pin switches[11] not assigned to an exact location on the device
-    Info: Pin switches[12] not assigned to an exact location on the device
-    Info: Pin switches[13] not assigned to an exact location on the device
-    Info: Pin switches[14] not assigned to an exact location on the device
-    Info: Pin switches[15] not assigned to an exact location on the device
-    Info: Pin switches[16] not assigned to an exact location on the device
-    Info: Pin switches[17] not assigned to an exact location on the device
-    Info: Pin switches[18] not assigned to an exact location on the device
-    Info: Pin switches[19] not assigned to an exact location on the device
-    Info: Pin switches[20] not assigned to an exact location on the device
-    Info: Pin switches[21] not assigned to an exact location on the device
-    Info: Pin switches[22] not assigned to an exact location on the device
-    Info: Pin switches[23] not assigned to an exact location on the device
-    Info: Pin switches[24] not assigned to an exact location on the device
-    Info: Pin switches[25] not assigned to an exact location on the device
-    Info: Pin switches[26] not assigned to an exact location on the device
-    Info: Pin switches[27] not assigned to an exact location on the device
-    Info: Pin switches[28] not assigned to an exact location on the device
-    Info: Pin switches[29] not assigned to an exact location on the device
 Info: Fitter is using the Classic Timing Analyzer
 Info: Timing requirements not specified -- quality metrics such as performance and power consumption may be sacrificed to reduce compilation time.
 Info: Automatically promoted node clk (placed in PIN 17 (CLK0, LVDSCLK0p, Input))
@@ -1037,68 +995,68 @@ Info: Starting register packing
 Info: Finished register packing
     Extra Info: No registers were packed into other blocks
 Info: Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
-    Info: Number of I/O pins in group: 60 (unused VREF, 3.3V VCCIO, 30 input, 30 output, 0 bidirectional)
+    Info: Number of I/O pins in group: 6 (unused VREF, 3.3V VCCIO, 0 input, 6 output, 0 bidirectional)
         Info: I/O standards used: 3.3-V LVTTL.
 Info: I/O bank details before I/O pin placement
     Info: Statistics of I/O banks
-        Info: I/O bank number 1 does not use VREF pins and has undetermined VCCIO pins. 3 total pin(s) used --  16 pins available
-        Info: I/O bank number 2 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  23 pins available
-        Info: I/O bank number 3 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  22 pins available
-        Info: I/O bank number 4 does not use VREF pins and has 3.3V VCCIO pins. 12 total pin(s) used --  12 pins available
-Info: Fitter preparation operations ending: elapsed time is 00:00:01
+        Info: I/O bank number 1 does not use VREF pins and has 3.3V VCCIO pins. 13 total pin(s) used --  6 pins available
+        Info: I/O bank number 2 does not use VREF pins and has undetermined VCCIO pins. 18 total pin(s) used --  5 pins available
+        Info: I/O bank number 3 does not use VREF pins and has undetermined VCCIO pins. 15 total pin(s) used --  8 pins available
+        Info: I/O bank number 4 does not use VREF pins and has 3.3V VCCIO pins. 24 total pin(s) used --  0 pins available
+Info: Fitter preparation operations ending: elapsed time is 00:00:00
 Info: Fitter placement preparation operations beginning
 Info: Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info: Fitter placement operations beginning
 Info: Fitter placement was successful
 Info: Fitter placement operations ending: elapsed time is 00:00:01
-Info: Slack time is -4.022 ns between source register "counterA4_s[10]" and destination register "counterA4_s[0]"
+Info: Slack time is -4.121 ns between source register "counterC5_s[10]" and destination register "counterC5_s[0]"
     Info: + Largest register to register requirement is 0.736 ns
     Info:   Shortest clock path from clock "clk" to destination register is 2.494 ns
         Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = Unassigned; Fanout = 1; CLK Node = 'clk'
         Info: 2: + IC(0.142 ns) + CELL(0.000 ns) = 0.996 ns; Loc. = Unassigned; Fanout = 792; COMB Node = 'clk~clkctrl'
-        Info: 3: + IC(0.832 ns) + CELL(0.666 ns) = 2.494 ns; Loc. = Unassigned; Fanout = 3; REG Node = 'counterA4_s[0]'
+        Info: 3: + IC(0.832 ns) + CELL(0.666 ns) = 2.494 ns; Loc. = Unassigned; Fanout = 10; REG Node = 'counterC5_s[0]'
         Info: Total cell delay = 1.520 ns ( 60.95 % )
         Info: Total interconnect delay = 0.974 ns ( 39.05 % )
     Info:   Longest clock path from clock "clk" to destination register is 2.494 ns
         Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = Unassigned; Fanout = 1; CLK Node = 'clk'
         Info: 2: + IC(0.142 ns) + CELL(0.000 ns) = 0.996 ns; Loc. = Unassigned; Fanout = 792; COMB Node = 'clk~clkctrl'
-        Info: 3: + IC(0.832 ns) + CELL(0.666 ns) = 2.494 ns; Loc. = Unassigned; Fanout = 3; REG Node = 'counterA4_s[0]'
+        Info: 3: + IC(0.832 ns) + CELL(0.666 ns) = 2.494 ns; Loc. = Unassigned; Fanout = 10; REG Node = 'counterC5_s[0]'
         Info: Total cell delay = 1.520 ns ( 60.95 % )
         Info: Total interconnect delay = 0.974 ns ( 39.05 % )
     Info:   Shortest clock path from clock "clk" to source register is 2.494 ns
         Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = Unassigned; Fanout = 1; CLK Node = 'clk'
         Info: 2: + IC(0.142 ns) + CELL(0.000 ns) = 0.996 ns; Loc. = Unassigned; Fanout = 792; COMB Node = 'clk~clkctrl'
-        Info: 3: + IC(0.832 ns) + CELL(0.666 ns) = 2.494 ns; Loc. = Unassigned; Fanout = 3; REG Node = 'counterA4_s[10]'
+        Info: 3: + IC(0.832 ns) + CELL(0.666 ns) = 2.494 ns; Loc. = Unassigned; Fanout = 3; REG Node = 'counterC5_s[10]'
         Info: Total cell delay = 1.520 ns ( 60.95 % )
         Info: Total interconnect delay = 0.974 ns ( 39.05 % )
     Info:   Longest clock path from clock "clk" to source register is 2.494 ns
         Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = Unassigned; Fanout = 1; CLK Node = 'clk'
         Info: 2: + IC(0.142 ns) + CELL(0.000 ns) = 0.996 ns; Loc. = Unassigned; Fanout = 792; COMB Node = 'clk~clkctrl'
-        Info: 3: + IC(0.832 ns) + CELL(0.666 ns) = 2.494 ns; Loc. = Unassigned; Fanout = 3; REG Node = 'counterA4_s[10]'
+        Info: 3: + IC(0.832 ns) + CELL(0.666 ns) = 2.494 ns; Loc. = Unassigned; Fanout = 3; REG Node = 'counterC5_s[10]'
         Info: Total cell delay = 1.520 ns ( 60.95 % )
         Info: Total interconnect delay = 0.974 ns ( 39.05 % )
     Info:   Micro clock to output delay of source is 0.304 ns
     Info:   Micro setup delay of destination is -0.040 ns
-    Info: - Longest register to register delay is 4.758 ns
-        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = Unassigned; Fanout = 3; REG Node = 'counterA4_s[10]'
-        Info: 2: + IC(1.226 ns) + CELL(0.370 ns) = 1.596 ns; Loc. = Unassigned; Fanout = 1; COMB Node = 'Equal22~2'
-        Info: 3: + IC(1.157 ns) + CELL(0.370 ns) = 3.123 ns; Loc. = Unassigned; Fanout = 9; COMB Node = 'Equal22~4'
-        Info: 4: + IC(1.157 ns) + CELL(0.370 ns) = 4.650 ns; Loc. = Unassigned; Fanout = 1; COMB Node = 'counterA4_s~28'
-        Info: 5: + IC(0.000 ns) + CELL(0.108 ns) = 4.758 ns; Loc. = Unassigned; Fanout = 3; REG Node = 'counterA4_s[0]'
-        Info: Total cell delay = 1.218 ns ( 25.60 % )
-        Info: Total interconnect delay = 3.540 ns ( 74.40 % )
-Info: Estimated most critical path is register to register delay of 4.758 ns
-    Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LAB_X21_Y10; Fanout = 3; REG Node = 'counterA4_s[10]'
-    Info: 2: + IC(1.226 ns) + CELL(0.370 ns) = 1.596 ns; Loc. = LAB_X21_Y11; Fanout = 1; COMB Node = 'Equal22~2'
-    Info: 3: + IC(1.157 ns) + CELL(0.370 ns) = 3.123 ns; Loc. = LAB_X21_Y10; Fanout = 9; COMB Node = 'Equal22~4'
-    Info: 4: + IC(1.157 ns) + CELL(0.370 ns) = 4.650 ns; Loc. = LAB_X21_Y11; Fanout = 1; COMB Node = 'counterA4_s~28'
-    Info: 5: + IC(0.000 ns) + CELL(0.108 ns) = 4.758 ns; Loc. = LAB_X21_Y11; Fanout = 3; REG Node = 'counterA4_s[0]'
-    Info: Total cell delay = 1.218 ns ( 25.60 % )
-    Info: Total interconnect delay = 3.540 ns ( 74.40 % )
+    Info: - Longest register to register delay is 4.857 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = Unassigned; Fanout = 3; REG Node = 'counterC5_s[10]'
+        Info: 2: + IC(1.259 ns) + CELL(0.370 ns) = 1.629 ns; Loc. = Unassigned; Fanout = 1; COMB Node = 'Equal25~2'
+        Info: 3: + IC(1.190 ns) + CELL(0.370 ns) = 3.189 ns; Loc. = Unassigned; Fanout = 8; COMB Node = 'Equal25~4'
+        Info: 4: + IC(1.190 ns) + CELL(0.370 ns) = 4.749 ns; Loc. = Unassigned; Fanout = 1; COMB Node = 'counterC5_s~21'
+        Info: 5: + IC(0.000 ns) + CELL(0.108 ns) = 4.857 ns; Loc. = Unassigned; Fanout = 10; REG Node = 'counterC5_s[0]'
+        Info: Total cell delay = 1.218 ns ( 25.08 % )
+        Info: Total interconnect delay = 3.639 ns ( 74.92 % )
+Info: Estimated most critical path is register to register delay of 4.857 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LAB_X14_Y4; Fanout = 3; REG Node = 'counterC5_s[10]'
+    Info: 2: + IC(1.259 ns) + CELL(0.370 ns) = 1.629 ns; Loc. = LAB_X14_Y5; Fanout = 1; COMB Node = 'Equal25~2'
+    Info: 3: + IC(1.190 ns) + CELL(0.370 ns) = 3.189 ns; Loc. = LAB_X14_Y4; Fanout = 8; COMB Node = 'Equal25~4'
+    Info: 4: + IC(1.190 ns) + CELL(0.370 ns) = 4.749 ns; Loc. = LAB_X14_Y5; Fanout = 1; COMB Node = 'counterC5_s~21'
+    Info: 5: + IC(0.000 ns) + CELL(0.108 ns) = 4.857 ns; Loc. = LAB_X14_Y5; Fanout = 10; REG Node = 'counterC5_s[0]'
+    Info: Total cell delay = 1.218 ns ( 25.08 % )
+    Info: Total interconnect delay = 3.639 ns ( 74.92 % )
 Info: Fitter routing operations beginning
 Info: Average interconnect usage is 2% of the available device resources
-    Info: Peak interconnect usage is 2% of the available device resources in the region that extends from location X14_Y0 to location X28_Y14
-Info: Fitter routing operations ending: elapsed time is 00:00:01
+    Info: Peak interconnect usage is 3% of the available device resources in the region that extends from location X0_Y0 to location X13_Y14
+Info: Fitter routing operations ending: elapsed time is 00:00:00
 Info: The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info: Optimizations that may affect the design's routability were skipped
     Info: Optimizations that may affect the design's timing were skipped
@@ -1141,18 +1099,25 @@ Warning: Found 36 output pins without output pin load capacitance assignment
     Info: Pin "speaker[34]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info: Pin "speaker[35]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
 Info: Delay annotation completed successfully
+Warning: Following 6 pins have nothing, GND, or VCC driving datain port -- changes to this connectivity may change fitting results
+    Info: Pin speaker[0] has GND driving its datain port
+    Info: Pin speaker[1] has GND driving its datain port
+    Info: Pin speaker[2] has GND driving its datain port
+    Info: Pin speaker[3] has GND driving its datain port
+    Info: Pin speaker[4] has GND driving its datain port
+    Info: Pin speaker[5] has GND driving its datain port
 Warning: The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info: Generated suppressed messages file D:/Documents/BUET/My Files/DLD/DLD Project Proposals/Poor Mans Piano/Piano/piano.fit.smsg
-Info: Quartus II Fitter was successful. 0 errors, 3 warnings
+Info: Generated suppressed messages file D:/Projects/Poor-Mans-Piano/Piano/piano.fit.smsg
+Info: Quartus II Fitter was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 283 megabytes
-    Info: Processing ended: Tue Dec 01 00:14:32 2020
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Processing ended: Thu Dec 10 19:51:59 2020
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in D:/Documents/BUET/My Files/DLD/DLD Project Proposals/Poor Mans Piano/Piano/piano.fit.smsg.
+The suppressed messages can be found in D:/Projects/Poor-Mans-Piano/Piano/piano.fit.smsg.
 
 
