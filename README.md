@@ -1,2 +1,105 @@
 # Poor-Mans-Piano
 FPGA based MIDI keyboard project for EEE 304 (Digital Electronics Laboratory)
+
+This project was adapted from the following GIT repository:
+https://github.com/mdelrosa/cafinalproject
+
+
+## Contents
+- [Repository Overview](#repository-overview)
+- [Materials Used](#materials-used)
+- [Working Procedure](#working-procedure)
+- [Verilog Simulation](#verilog-simulation)
+- [Output Stage Simulation](#output-stage-simulation)
+- [Hardware Setup](#hardware-setup)
+- [Final Demo](#final-demo)
+- [Conclusion](#conclusion)
+- [Team](#team)
+
+## Repository Overview
+- <a href="https://github.com/ClockWorkKid/Poor-Mans-Piano/tree/main/Piano">Piano</a> is the quartus project folder containing verilog code and simulation files.
+- <a href="https://github.com/ClockWorkKid/Poor-Mans-Piano/tree/main/proteus">proteus</a> contains proteus simulation of the output stage.
+- <a href="https://github.com/ClockWorkKid/Poor-Mans-Piano/blob/main/proposal.docx">proposal.docx</a> is the project proposal.
+- <a href="https://github.com/ClockWorkKid/Poor-Mans-Piano/tree/main/proposal%20files">proposal files</a> contains design materials used for the diagrams.
+- <a href="https://github.com/ClockWorkKid/Poor-Mans-Piano/tree/main/screenshots">screenshots</a> folder contains images
+
+## Materials Used
+
+- Altera Cyclone II EP2C5T144 development board (<a href="http://land-boards.com/blwiki/index.php?title=Cyclone_II_EP2C5_Mini_Dev_Board">link</a>)
+- Altera USB Blaster V-2 (<a href="https://www.amazon.com/ALTERA-Blaster-ByteBlaster-Download-Debugger/dp/B00UVM2AQ4">link</a>)
+- PVC board and cutter (for keyboard body)
+- Screws (for key contact + body)
+- Female-Female jumpers (A lot!)
+- 26 AWG wires (connects screws with circuit board)
+- Aluminium foil (positive rail)
+- 3.5mm headphone jack female
+- Veroboard, soldering tools
+- AWEI Y220 speaker with auxiliary cable
+
+## Working Procedure
+There are three main units of the piano - input keyboard, FPGA tone generator and output speaker. 
+
+### Input 
+
+The input keyboard consists of 36 keys housing 3 octaves starting with the C3 note up to B5 note. Keys have screws connected to them, and a wire connected to the screws go to a single circuit board where they are pulled down with a 10k resistor. The base of the keyboard is made of aluminium foil and connected to positive terminal of the FPGA board. When a key touches the foil layer, the screw gets a high voltage that is sensed by input pins of the FPGA board.
+
+<figure align="center">
+    <img src="screenshots/keys.png" alt="drawing" width="400"/>
+    <figcaption>Keyboard</figcaption>
+</figure>
+
+### Tone Generator
+
+The tone generator is basically a set of 36 counter corresponding to the 36 notes of the piano. The system clock has a m*1MHz frequency (m should be 50 if clock is 50MHz). The counters keep incrementing their values in each positive clock edge. After reaching a certain value, the counter resets and toggles an output. 
+
+For example, if the clock frequency is 1MHz, then the counter increases after each 1 micro-second. Say we set the counter to reset at a value of 1000, and toggle an output. After 1000 microseconds have elapsed, the counter reaches the value of 1000, resets to 0 and toggles the output. As a result, the output becomes high after 1 millisecond. After another 1 millisecond, the output toggles once more as the counter resets one more time. Thus we have an output that has a period of 2 milliseconds (500 Hz). In this way, a 500 Hz clock is generated. In this method, different reset values are used for different counters to generate tones of different frequencies.
+
+<figure align="center">
+    <img src="screenshots/core.png" alt="drawing" width="400"/>
+    <figcaption>Demo circuit for single tone</figcaption>
+</figure>
+
+A chart containing values of all the frequencies of notes used has been mentioned here. Note that in case the system clock is **m times 1MHz**, the reset value should be set to **m * reset_value**
+
+| Note | Freq(Hz) | Clock cycle | Reset value | Note | Freq(Hz) | Clock cycle | Reset value | Note | Freq(Hz) | Clock cycle | Reset value |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|C3	    |130.81|7644|3822|C4	|261.63|3822|1911|C5	|523.25|1911|956|
+|C3#    |138.59|7215|3608|C4#	|277.18|3608|1804|C5#	|554.37|1804|902|
+|D3	    |146.83|6811|3405|D4	|293.66|3405|1703|D5	|587.33|1703|851|
+|D3#    |155.56|6428|3214|D4#	|311.13|3214|1607|D5#	|622.25|1607|804|
+|E3	    |164.81|6068|3034|E4	|329.63|3034|1517|E5	|659.25|1517|758|
+|F3	    |174.61|5727|2863|F4	|349.23|2863|1432|F5	|698.46|1432|716|
+|F3#    |185.00|5405|2703|F4#	|369.99|2703|1351|F5#	|739.99|1351|676|
+|G3	    |196.00|5102|2551|G4	|392.00|2551|1276|G5	|783.99|1276|638|
+|G3#    |207.65|4816|2408|G4#	|415.30|2408|1204|G5#	|830.61|1204|602|
+|A3	    |220.00|4545|2273|A4	|440.00|2273|1136|A5	|880.00|1136|568|
+|A3#    |233.08|4290|2145|A4#	|466.16|2145|1073|A5#	|932.33|1073|536|
+|B3	    |246.94|4050|2025|B4	|493.88|2025|1012|B5	|987.77|1012|506|
+
+### Output
+
+The output stage was initially planned to include amplifiers and active filters, but a simple RC circuit network gave a very smooth audio output for the given notes, so the circuit was kept simple. Each note had a corresponding output pin that connected to the output capacitance with a 10k resistor, and the capacitor output terminal was connected to a wireless speaker with an auxiliary audio cable. The capacitor works as a low pass filter that reduces the high frequency components of the square wave output. 
+
+<figure align="center">
+    <img src="screenshots/output.png" alt="drawing" width="400"/>
+    <figcaption>Output stage</figcaption>
+</figure>
+
+
+## Verilog Simulation
+
+## Output Stage Simulation
+
+## Hardware Setup
+
+## Final Demo
+
+## Conclusion
+
+## Team
+
+- Mir Sayeed Mohammad (EEE) (github - https://github.com/ClockWorkKid)
+- Himaddri Roy (EEE) (github - https://github.com/himu587)
+- Tusher Raihan (EEE) (github - )
+
+https://www.youtube.com/watch?v=ZrMe8JS7Ktk&ab_channel=LearnElectronicsOnline
