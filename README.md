@@ -4,6 +4,8 @@ FPGA based MIDI keyboard project for EEE 304 (Digital Electronics Laboratory)
 This project was adapted from the following GIT repository:
 https://github.com/mdelrosa/cafinalproject
 
+Demonstration video:
+https://youtu.be/95gMFHwd9gE
 
 <figure align="center">
     <img src="screenshots/hardware/piano.jpg" alt="drawing" width="400"/>
@@ -18,7 +20,6 @@ https://github.com/mdelrosa/cafinalproject
 - [Verilog Simulation](#verilog-simulation)
 - [Output Stage Simulation](#output-stage-simulation)
 - [Hardware Setup](#hardware-setup)
-- [Final Demo](#final-demo)
 - [Conclusion](#conclusion)
 - [Team](#team)
 
@@ -141,15 +142,18 @@ Using a 1MHz clock and setting the parameter m = 1 in the verilog code for the s
     <figcaption>1 MHz clock signal (high zoom)</figcaption>
 </figure>
 
+
 <figure align="center">
     <img src="screenshots/quartus/keypress.png" alt="drawing" width="400"/>
     <figcaption>Random keypresses with around 100-200ms duration</figcaption>
 </figure>
 
+
 <figure align="center">
     <img src="screenshots/quartus/output.png" alt="drawing" width="400"/>
     <figcaption>Oscillating Output corresponding to keypresses</figcaption>
 </figure>
+
 
 <figure align="center">
     <img src="screenshots/quartus/outputZoom.png" alt="drawing" width="400"/>
@@ -181,39 +185,42 @@ The hardware was setup following the schematics mentioned above.
     <figcaption>Each key has a screw through it, and a wire connects each screw to veroboard 1 (veroboard 1 pulls down all the inputs to ground)</figcaption>
 </figure>
 
+
 <figure align="center">
     <img src="screenshots/hardware/aluminum1.jpg" alt="drawing" width="400"/>
     <figcaption>Bottom part of the piano has an aluminum rail connecting to the +vcc of veroboard 1</figcaption>
 </figure>
+
 
 <figure align="center">
     <img src="screenshots/hardware/aluminum2.jpg" alt="drawing" width="400"/>
     <figcaption>Aluminum rail close-up</figcaption>
 </figure>
 
+
 <figure align="center">
     <img src="screenshots/hardware/input.jpg" alt="drawing" width="400"/>
     <figcaption>All screw wires and aluminum rail wire connected to veroboard 1</figcaption>
 </figure>
+
 
 <figure align="center">
     <img src="screenshots/hardware/inout.jpg" alt="drawing" width="400"/>
     <figcaption>Fpga (left), veroboard 1 (top) and veroboard 2 (bottom)</figcaption>
 </figure>
 
+
 <figure align="center">
     <img src="screenshots/hardware/output.jpg" alt="drawing" width="400"/>
     <figcaption>FPGA output pins connected to the output with a capacitor on veroboard 2 (with a 3.5mm audio jack for convenience)</figcaption>
 </figure>
+
 
 <figure align="center">
     <img src="screenshots/hardware/fpga.jpg" alt="drawing" width="400"/>
     <figcaption>USB blaster connected to programming port of FPGA board</figcaption>
 </figure>
 
-## Final Demo
-The demonstration video can be found on Youtube (Final presentation for the laboratory project, the description is in Bengali):
-https://youtu.be/95gMFHwd9gE
 
 ## Conclusion
 
