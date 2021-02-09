@@ -1,5 +1,5 @@
 Analysis & Synthesis report for piano
-Thu Dec 10 19:51:53 2020
+Tue Feb 09 13:41:36 2021
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -12,9 +12,10 @@ Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
   4. Analysis & Synthesis Source Files Read
   5. Analysis & Synthesis Resource Usage Summary
   6. Analysis & Synthesis Resource Utilization by Entity
-  7. General Register Statistics
-  8. Parameter Settings for User Entity Instance: Top-level Entity: |piano
-  9. Analysis & Synthesis Messages
+  7. Registers Removed During Synthesis
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |piano
+ 10. Analysis & Synthesis Messages
 
 
 
@@ -40,15 +41,15 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 10 19:51:53 2020    ;
+; Analysis & Synthesis Status        ; Successful - Tue Feb 09 13:41:36 2021    ;
 ; Quartus II Version                 ; 9.0 Build 132 02/25/2009 SJ Full Version ;
 ; Revision Name                      ; piano                                    ;
 ; Top-level Entity Name              ; piano                                    ;
 ; Family                             ; Cyclone II                               ;
-; Total logic elements               ; 1,366                                    ;
-;     Total combinational functions  ; 1,366                                    ;
-;     Dedicated logic registers      ; 792                                      ;
-; Total registers                    ; 792                                      ;
+; Total logic elements               ; 1,250                                    ;
+;     Total combinational functions  ; 1,250                                    ;
+;     Dedicated logic registers      ; 772                                      ;
+; Total registers                    ; 772                                      ;
 ; Total pins                         ; 73                                       ;
 ; Total virtual pins                 ; 0                                        ;
 ; Total memory bits                  ; 0                                        ;
@@ -146,27 +147,27 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 1,366 ;
+; Estimated Total logic elements              ; 1,250 ;
 ;                                             ;       ;
-; Total combinational functions               ; 1366  ;
+; Total combinational functions               ; 1250  ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 586   ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 780   ;
+;     -- 4 input functions                    ; 482   ;
+;     -- 3 input functions                    ; 12    ;
+;     -- <=2 input functions                  ; 756   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 646   ;
-;     -- arithmetic mode                      ; 720   ;
+;     -- normal mode                          ; 542   ;
+;     -- arithmetic mode                      ; 708   ;
 ;                                             ;       ;
-; Total registers                             ; 792   ;
-;     -- Dedicated logic registers            ; 792   ;
+; Total registers                             ; 772   ;
+;     -- Dedicated logic registers            ; 772   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 73    ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 792   ;
-; Total fan-out                               ; 5482  ;
-; Average fan-out                             ; 2.46  ;
+; Maximum fan-out                             ; 772   ;
+; Total fan-out                               ; 5014  ;
+; Average fan-out                             ; 2.39  ;
 +---------------------------------------------+-------+
 
 
@@ -175,9 +176,38 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |piano                     ; 1366 (1366)       ; 792 (792)    ; 0           ; 0            ; 0       ; 0         ; 73   ; 0            ; |piano              ; work         ;
+; |piano                     ; 1250 (1250)       ; 772 (772)    ; 0           ; 0            ; 0       ; 0         ; 73   ; 0            ; |piano              ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------+
+; Registers Removed During Synthesis                                  ;
++----------------------------------------+----------------------------+
+; Register name                          ; Reason for Removal         ;
++----------------------------------------+----------------------------+
+; counterD5[0]                           ; Merged with counterF3_s[0] ;
+; counterF4_s[0]                         ; Merged with counterF3_s[0] ;
+; counterA3[0]                           ; Merged with counterF3_s[0] ;
+; counterC4[0]                           ; Merged with counterF3_s[0] ;
+; counterA3_s[0]                         ; Merged with counterF3_s[0] ;
+; counterA4_s[0]                         ; Merged with counterF3_s[0] ;
+; counterE4[0]                           ; Merged with counterF3_s[0] ;
+; counterD4[0]                           ; Merged with counterF3_s[0] ;
+; counterB3[0]                           ; Merged with counterF3_s[0] ;
+; counterG3[0]                           ; Merged with counterF3_s[0] ;
+; counterD4_s[0]                         ; Merged with counterF3_s[0] ;
+; counterD3[0]                           ; Merged with counterF3_s[0] ;
+; counterD4[1]                           ; Merged with counterG3[1]   ;
+; counterD4_s[1]                         ; Merged with counterG3[1]   ;
+; counterF4_s[1]                         ; Merged with counterC4[1]   ;
+; counterG3[1]                           ; Merged with counterF3_s[1] ;
+; counterD4[2]                           ; Merged with counterG3[2]   ;
+; counterD4_s[2]                         ; Merged with counterF3_s[2] ;
+; counterD5[1]                           ; Merged with counterC4[1]   ;
+; counterF4_s[2]                         ; Merged with counterC4[2]   ;
+; Total Number of Removed Registers = 20 ;                            ;
++----------------------------------------+----------------------------+
 
 
 +------------------------------------------------------+
@@ -185,7 +215,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 792   ;
+; Total registers                              ; 772   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -200,7 +230,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+-------+----------------------------------------------+
 ; Parameter Name ; Value ; Type                                         ;
 +----------------+-------+----------------------------------------------+
-; m              ; 50    ; Signed Integer                               ;
+; m              ; 1     ; Signed Integer                               ;
 ; n              ; 20    ; Signed Integer                               ;
 ; C3             ; 3822  ; Signed Integer                               ;
 ; C3_s           ; 3608  ; Signed Integer                               ;
@@ -248,47 +278,47 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
-    Info: Processing started: Thu Dec 10 19:51:50 2020
+    Info: Processing started: Tue Feb 09 13:41:30 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off piano -c piano
 Info: Found 1 design units, including 1 entities, in source file piano.v
     Info: Found entity 1: piano
 Info: Elaborating entity "piano" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at piano.v(30): truncated value with size 32 to match size of target (21)
 Warning (10230): Verilog HDL assignment warning at piano.v(35): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(40): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(45): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(50): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(43): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(49): truncated value with size 32 to match size of target (21)
 Warning (10230): Verilog HDL assignment warning at piano.v(55): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(60): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(65): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(70): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(75): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(80): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(61): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(67): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(73): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(79): truncated value with size 32 to match size of target (21)
 Warning (10230): Verilog HDL assignment warning at piano.v(85): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(90): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(95): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(100): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(105): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(110): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(91): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(97): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(103): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(109): truncated value with size 32 to match size of target (21)
 Warning (10230): Verilog HDL assignment warning at piano.v(115): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(120): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(125): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(130): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(135): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(140): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(121): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(127): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(133): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(139): truncated value with size 32 to match size of target (21)
 Warning (10230): Verilog HDL assignment warning at piano.v(145): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(150): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(155): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(160): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(165): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(170): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(151): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(157): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(163): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(169): truncated value with size 32 to match size of target (21)
 Warning (10230): Verilog HDL assignment warning at piano.v(175): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(180): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(185): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(190): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(195): truncated value with size 32 to match size of target (21)
-Warning (10230): Verilog HDL assignment warning at piano.v(200): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(181): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(187): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(193): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(199): truncated value with size 32 to match size of target (21)
 Warning (10230): Verilog HDL assignment warning at piano.v(205): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(211): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(217): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(223): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(229): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(235): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(241): truncated value with size 32 to match size of target (21)
+Warning (10230): Verilog HDL assignment warning at piano.v(247): truncated value with size 32 to match size of target (21)
 Warning (10034): Output port "speaker[5]" at piano.v(5) has no driver
 Warning (10034): Output port "speaker[4]" at piano.v(5) has no driver
 Warning (10034): Output port "speaker[3]" at piano.v(5) has no driver
@@ -302,14 +332,14 @@ Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "speaker[3]" is stuck at GND
     Warning (13410): Pin "speaker[4]" is stuck at GND
     Warning (13410): Pin "speaker[5]" is stuck at GND
-Info: Implemented 1439 device resources after synthesis - the final resource count might be different
+Info: Implemented 1323 device resources after synthesis - the final resource count might be different
     Info: Implemented 37 input pins
     Info: Implemented 36 output pins
-    Info: Implemented 1366 logic cells
+    Info: Implemented 1250 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 49 warnings
-    Info: Peak virtual memory: 237 megabytes
-    Info: Processing ended: Thu Dec 10 19:51:53 2020
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Peak virtual memory: 238 megabytes
+    Info: Processing ended: Tue Feb 09 13:41:36 2021
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:05
 
 

@@ -30,7 +30,7 @@ ON
 # case_sensitive
 # source_file
 piano.v
-f0c12b896ed86c385485dd8dd890bb
+4196a7c355b85976529ff9b0b832d1c8
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -50,7 +50,7 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 }
 # user_parameter {
 m
-50
+1
 PARAMETER_SIGNED_DEC
 DEF
 n

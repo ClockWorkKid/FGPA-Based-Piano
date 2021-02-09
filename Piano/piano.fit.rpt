@@ -1,5 +1,5 @@
 Fitter report for piano
-Thu Dec 10 19:51:58 2020
+Tue Feb 09 13:41:43 2021
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
 
 
@@ -62,17 +62,17 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +------------------------------------+------------------------------------------+
-; Fitter Status                      ; Successful - Thu Dec 10 19:51:58 2020    ;
+; Fitter Status                      ; Successful - Tue Feb 09 13:41:43 2021    ;
 ; Quartus II Version                 ; 9.0 Build 132 02/25/2009 SJ Full Version ;
 ; Revision Name                      ; piano                                    ;
 ; Top-level Entity Name              ; piano                                    ;
 ; Family                             ; Cyclone II                               ;
 ; Device                             ; EP2C5T144C8                              ;
 ; Timing Models                      ; Final                                    ;
-; Total logic elements               ; 1,366 / 4,608 ( 30 % )                   ;
-;     Total combinational functions  ; 1,366 / 4,608 ( 30 % )                   ;
-;     Dedicated logic registers      ; 792 / 4,608 ( 17 % )                     ;
-; Total registers                    ; 792                                      ;
+; Total logic elements               ; 1,250 / 4,608 ( 27 % )                   ;
+;     Total combinational functions  ; 1,250 / 4,608 ( 27 % )                   ;
+;     Dedicated logic registers      ; 772 / 4,608 ( 17 % )                     ;
+; Total registers                    ; 772                                      ;
 ; Total pins                         ; 73 / 89 ( 82 % )                         ;
 ; Total virtual pins                 ; 0                                        ;
 ; Total memory bits                  ; 0 / 119,808 ( 0 % )                      ;
@@ -140,12 +140,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 2           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.40        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     1 processor            ; 100.0%      ;
-;     2 processors           ;  25.0%      ;
+;     2 processors           ; < 0.1%      ;
 +----------------------------+-------------+
 
 
@@ -155,8 +155,8 @@ applicable agreement for further details.
 ; Type                    ; Value               ;
 +-------------------------+---------------------+
 ; Placement               ;                     ;
-;     -- Requested        ; 0 / 2231 ( 0.00 % ) ;
-;     -- Achieved         ; 0 / 2231 ( 0.00 % ) ;
+;     -- Requested        ; 0 / 2095 ( 0.00 % ) ;
+;     -- Achieved         ; 0 / 2095 ( 0.00 % ) ;
 ;                         ;                     ;
 ; Routing (by Connection) ;                     ;
 ;     -- Requested        ; 0 / 0 ( 0.00 % )    ;
@@ -178,7 +178,7 @@ applicable agreement for further details.
 +----------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +----------------+---------+-------------------+-------------------------+-------------------+
-; Top            ; 2231    ; 0                 ; N/A                     ; Source File       ;
+; Top            ; 2095    ; 0                 ; N/A                     ; Source File       ;
 +----------------+---------+-------------------+-------------------------+-------------------+
 
 
@@ -193,26 +193,26 @@ The pin-out file can be found in D:/Projects/Poor-Mans-Piano/Piano/piano.pin.
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 1,366 / 4,608 ( 30 % ) ;
-;     -- Combinational with no register       ; 574                    ;
+; Total logic elements                        ; 1,250 / 4,608 ( 27 % ) ;
+;     -- Combinational with no register       ; 478                    ;
 ;     -- Register only                        ; 0                      ;
-;     -- Combinational with a register        ; 792                    ;
+;     -- Combinational with a register        ; 772                    ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 586                    ;
-;     -- 3 input functions                    ; 0                      ;
-;     -- <=2 input functions                  ; 780                    ;
+;     -- 4 input functions                    ; 482                    ;
+;     -- 3 input functions                    ; 12                     ;
+;     -- <=2 input functions                  ; 756                    ;
 ;     -- Register only                        ; 0                      ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 646                    ;
-;     -- arithmetic mode                      ; 720                    ;
+;     -- normal mode                          ; 542                    ;
+;     -- arithmetic mode                      ; 708                    ;
 ;                                             ;                        ;
-; Total registers*                            ; 792 / 4,851 ( 16 % )   ;
-;     -- Dedicated logic registers            ; 792 / 4,608 ( 17 % )   ;
+; Total registers*                            ; 772 / 4,851 ( 16 % )   ;
+;     -- Dedicated logic registers            ; 772 / 4,608 ( 17 % )   ;
 ;     -- I/O registers                        ; 0 / 243 ( 0 % )        ;
 ;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 120 / 288 ( 42 % )     ;
+; Total LABs:  partially or completely used   ; 114 / 288 ( 40 % )     ;
 ; User inserted logic elements                ; 0                      ;
 ; Virtual pins                                ; 0                      ;
 ; I/O pins                                    ; 73 / 89 ( 82 % )       ;
@@ -228,13 +228,13 @@ The pin-out file can be found in D:/Projects/Poor-Mans-Piano/Piano/piano.pin.
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )          ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )          ;
 ; Average interconnect usage (total/H/V)      ; 3% / 2% / 4%           ;
-; Peak interconnect usage (total/H/V)         ; 3% / 2% / 4%           ;
+; Peak interconnect usage (total/H/V)         ; 4% / 2% / 6%           ;
 ; Maximum fan-out node                        ; clk~clkctrl            ;
-; Maximum fan-out                             ; 792                    ;
-; Highest non-global fan-out signal           ; counterA3[20]          ;
-; Highest non-global fan-out                  ; 15                     ;
-; Total fan-out                               ; 5483                   ;
-; Average fan-out                             ; 2.45                   ;
+; Maximum fan-out                             ; 772                    ;
+; Highest non-global fan-out signal           ; counterF3_s[0]         ;
+; Highest non-global fan-out                  ; 26                     ;
+; Total fan-out                               ; 5015                   ;
+; Average fan-out                             ; 2.39                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -290,7 +290,7 @@ The pin-out file can be found in D:/Projects/Poor-Mans-Piano/Piano/piano.pin.
 +-------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+
 ; Name        ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load ;
 +-------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+
-; speaker[0]  ; 27    ; 1        ; 0            ; 5            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; speaker[0]  ; 121   ; 2        ; 19           ; 14           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
 ; speaker[10] ; 63    ; 4        ; 19           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
 ; speaker[11] ; 64    ; 4        ; 21           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
 ; speaker[12] ; 65    ; 4        ; 21           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
@@ -301,7 +301,7 @@ The pin-out file can be found in D:/Projects/Poor-Mans-Piano/Piano/piano.pin.
 ; speaker[17] ; 9     ; 1        ; 0            ; 11           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
 ; speaker[18] ; 24    ; 1        ; 0            ; 5            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
 ; speaker[19] ; 25    ; 1        ; 0            ; 5            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
-; speaker[1]  ; 121   ; 2        ; 19           ; 14           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; speaker[1]  ; 27    ; 1        ; 0            ; 5            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
 ; speaker[20] ; 28    ; 1        ; 0            ; 4            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
 ; speaker[21] ; 30    ; 1        ; 0            ; 2            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
 ; speaker[22] ; 31    ; 1        ; 0            ; 2            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
@@ -319,8 +319,8 @@ The pin-out file can be found in D:/Projects/Poor-Mans-Piano/Piano/piano.pin.
 ; speaker[33] ; 42    ; 4        ; 1            ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
 ; speaker[34] ; 41    ; 4        ; 1            ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
 ; speaker[35] ; 40    ; 4        ; 1            ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
-; speaker[3]  ; 113   ; 2        ; 26           ; 14           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
-; speaker[4]  ; 120   ; 2        ; 19           ; 14           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; speaker[3]  ; 26    ; 1        ; 0            ; 5            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
+; speaker[4]  ; 144   ; 2        ; 1            ; 14           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
 ; speaker[5]  ; 80    ; 3        ; 28           ; 5            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ;
 ; speaker[6]  ; 57    ; 4        ; 12           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
 ; speaker[7]  ; 58    ; 4        ; 12           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
@@ -334,8 +334,8 @@ The pin-out file can be found in D:/Projects/Poor-Mans-Piano/Piano/piano.pin.
 +----------+-------------------+---------------+--------------+
 ; I/O Bank ; Usage             ; VCCIO Voltage ; VREF Voltage ;
 +----------+-------------------+---------------+--------------+
-; 1        ; 14 / 19 ( 74 % )  ; 3.3V          ; --           ;
-; 2        ; 22 / 23 ( 96 % )  ; 3.3V          ; --           ;
+; 1        ; 15 / 19 ( 79 % )  ; 3.3V          ; --           ;
+; 2        ; 21 / 23 ( 91 % )  ; 3.3V          ; --           ;
 ; 3        ; 16 / 23 ( 70 % )  ; 3.3V          ; --           ;
 ; 4        ; 24 / 24 ( 100 % ) ; 3.3V          ; --           ;
 +----------+-------------------+---------------+--------------+
@@ -371,8 +371,8 @@ The pin-out file can be found in D:/Projects/Poor-Mans-Piano/Piano/piano.pin.
 ; 23       ;            ; 1        ; VCCIO1                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; 24       ; 25         ; 1        ; speaker[18]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 25       ; 26         ; 1        ; speaker[19]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
-; 26       ; 27         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; 27       ; 28         ; 1        ; speaker[0]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 26       ; 27         ; 1        ; speaker[3]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 27       ; 28         ; 1        ; speaker[1]                               ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; 28       ; 32         ; 1        ; speaker[20]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 29       ;            ; 1        ; VCCIO1                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; 30       ; 40         ; 1        ; speaker[21]                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
@@ -458,15 +458,15 @@ The pin-out file can be found in D:/Projects/Poor-Mans-Piano/Piano/piano.pin.
 ; 110      ;            ;          ; GNDA_PLL2                                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 111      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 112      ; 127        ; 2        ; speaker[2]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 113      ; 128        ; 2        ; speaker[3]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 113      ; 128        ; 2        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; 114      ; 129        ; 2        ; switches[18]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 115      ; 130        ; 2        ; switches[19]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 116      ;            ; 2        ; VCCIO2                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; 117      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 118      ; 134        ; 2        ; switches[20]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 119      ; 135        ; 2        ; switches[21]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
-; 120      ; 137        ; 2        ; speaker[4]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; 121      ; 138        ; 2        ; speaker[1]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; 120      ; 137        ; 2        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 121      ; 138        ; 2        ; speaker[0]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; 122      ; 139        ; 2        ; switches[22]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 123      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 124      ;            ;          ; VCCINT                                   ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -489,7 +489,7 @@ The pin-out file can be found in D:/Projects/Poor-Mans-Piano/Piano/piano.pin.
 ; 141      ; 166        ; 2        ; switches[33]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 142      ; 167        ; 2        ; switches[34]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; 143      ; 168        ; 2        ; switches[35]                             ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
-; 144      ; 169        ; 2        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 144      ; 169        ; 2        ; speaker[4]                               ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 +----------+------------+----------+------------------------------------------+--------+--------------+---------+------------+-----------------+----------+--------------+
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
 
@@ -536,7 +536,7 @@ Note: User assignments will override these defaults. The user specified values a
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
-; |piano                     ; 1366 (1366) ; 792 (792)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 73   ; 0            ; 574 (574)    ; 0 (0)             ; 792 (792)        ; |piano              ; work         ;
+; |piano                     ; 1250 (1250) ; 772 (772)                 ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 73   ; 0            ; 478 (478)    ; 0 (0)             ; 772 (772)        ; |piano              ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -630,7 +630,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; switches[6]         ;                   ;         ;
 ;      - speaker~0    ; 1                 ; 6       ;
 ; switches[7]         ;                   ;         ;
-;      - speaker~1    ; 1                 ; 6       ;
+;      - speaker~1    ; 0                 ; 6       ;
 ; switches[8]         ;                   ;         ;
 ;      - speaker~2    ; 1                 ; 6       ;
 ; switches[9]         ;                   ;         ;
@@ -654,15 +654,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; switches[18]        ;                   ;         ;
 ;      - speaker~12   ; 1                 ; 6       ;
 ; switches[19]        ;                   ;         ;
-;      - speaker~13   ; 1                 ; 6       ;
+;      - speaker~13   ; 0                 ; 6       ;
 ; switches[20]        ;                   ;         ;
-;      - speaker~14   ; 0                 ; 6       ;
+;      - speaker~14   ; 1                 ; 6       ;
 ; switches[21]        ;                   ;         ;
 ;      - speaker~15   ; 0                 ; 6       ;
 ; switches[22]        ;                   ;         ;
-;      - speaker~16   ; 1                 ; 6       ;
+;      - speaker~16   ; 0                 ; 6       ;
 ; switches[23]        ;                   ;         ;
-;      - speaker~17   ; 1                 ; 6       ;
+;      - speaker~17   ; 0                 ; 6       ;
 ; switches[24]        ;                   ;         ;
 ;      - speaker~18   ; 1                 ; 6       ;
 ; switches[25]        ;                   ;         ;
@@ -674,11 +674,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; switches[28]        ;                   ;         ;
 ;      - speaker~22   ; 0                 ; 6       ;
 ; switches[29]        ;                   ;         ;
-;      - speaker~23   ; 1                 ; 6       ;
+;      - speaker~23   ; 0                 ; 6       ;
 ; switches[0]         ;                   ;         ;
 ;      - speaker~36   ; 1                 ; 6       ;
 ; switches[30]        ;                   ;         ;
-;      - speaker~36   ; 1                 ; 6       ;
+;      - speaker~36   ; 0                 ; 6       ;
 ; switches[1]         ;                   ;         ;
 ;      - speaker~37   ; 0                 ; 6       ;
 ; switches[31]        ;                   ;         ;
@@ -686,9 +686,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; switches[2]         ;                   ;         ;
 ;      - speaker~38   ; 1                 ; 6       ;
 ; switches[32]        ;                   ;         ;
-;      - speaker~38   ; 1                 ; 6       ;
+;      - speaker~38   ; 0                 ; 6       ;
 ; switches[3]         ;                   ;         ;
-;      - speaker~39   ; 0                 ; 6       ;
+;      - speaker~39   ; 1                 ; 6       ;
 ; switches[33]        ;                   ;         ;
 ;      - speaker~39   ; 0                 ; 6       ;
 ; switches[4]         ;                   ;         ;
@@ -708,7 +708,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+-------+--------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Usage ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+-------+--------+----------------------+------------------+---------------------------+
-; clk  ; PIN_17   ; 792     ; Clock ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; clk  ; PIN_17   ; 772     ; Clock ; yes    ; Global Clock         ; GCLK2            ; --                        ;
 +------+----------+---------+-------+--------+----------------------+------------------+---------------------------+
 
 
@@ -717,7 +717,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+----------------------+------------------+---------------------------+
-; clk  ; PIN_17   ; 792     ; Global Clock         ; GCLK2            ; --                        ;
+; clk  ; PIN_17   ; 772     ; Global Clock         ; GCLK2            ; --                        ;
 +------+----------+---------+----------------------+------------------+---------------------------+
 
 
@@ -726,56 +726,56 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+---------------+
 ; Name            ; Fan-Out       ;
 +-----------------+---------------+
-; counterA3[20]   ; 15            ;
-; counterD3_s[20] ; 14            ;
-; counterC3[20]   ; 14            ;
-; counterD4_s[20] ; 14            ;
-; counterC4[20]   ; 14            ;
-; Equal9~5        ; 14            ;
-; Equal9~4        ; 14            ;
-; counterG3[20]   ; 14            ;
-; counterF3_s[20] ; 14            ;
-; Equal3~5        ; 13            ;
-; Equal3~4        ; 13            ;
-; Equal0~5        ; 13            ;
-; Equal0~4        ; 13            ;
-; counterF4_s[20] ; 13            ;
-; Equal15~5       ; 13            ;
-; Equal15~4       ; 13            ;
-; Equal12~5       ; 13            ;
-; Equal12~4       ; 13            ;
-; Equal7~5        ; 13            ;
-; Equal7~4        ; 13            ;
-; Equal6~5        ; 13            ;
-; Equal6~4        ; 13            ;
-; counterA5[0]    ; 12            ;
-; counterG5[0]    ; 12            ;
-; counterC5[0]    ; 12            ;
-; counterA4[20]   ; 12            ;
-; counterG4[20]   ; 12            ;
-; Equal18~5       ; 12            ;
-; Equal18~4       ; 12            ;
-; counterD4[20]   ; 12            ;
-; counterA3_s[20] ; 12            ;
-; counterF3[20]   ; 11            ;
-; Equal33~5       ; 11            ;
-; Equal33~4       ; 11            ;
-; counterG5_s[0]  ; 11            ;
-; Equal31~5       ; 11            ;
-; Equal31~4       ; 11            ;
-; counterF5[0]    ; 11            ;
-; counterD5[0]    ; 11            ;
-; Equal24~5       ; 11            ;
-; Equal24~4       ; 11            ;
-; Equal21~5       ; 11            ;
-; Equal21~4       ; 11            ;
-; counterG4_s[20] ; 11            ;
-; Equal19~5       ; 11            ;
-; Equal19~4       ; 11            ;
-; counterF4[20]   ; 11            ;
-; Equal14~5       ; 11            ;
-; Equal14~4       ; 11            ;
-; Equal10~5       ; 11            ;
+; counterF3_s[0]  ; 26            ;
+; counterC3[20]   ; 12            ;
+; counterE3[20]   ; 11            ;
+; Equal0~5        ; 11            ;
+; Equal0~4        ; 11            ;
+; counterB5[0]    ; 10            ;
+; Equal4~5        ; 10            ;
+; Equal4~4        ; 10            ;
+; counterG5[0]    ; 10            ;
+; counterE5[0]    ; 10            ;
+; counterC5[20]   ; 10            ;
+; counterB4[20]   ; 10            ;
+; counterG4[20]   ; 10            ;
+; counterE4[20]   ; 10            ;
+; counterB3[20]   ; 10            ;
+; Equal35~5       ; 9             ;
+; Equal35~4       ; 9             ;
+; counterD3_s[20] ; 9             ;
+; counterD3[20]   ; 9             ;
+; Equal31~5       ; 9             ;
+; Equal31~4       ; 9             ;
+; Equal28~5       ; 9             ;
+; Equal28~4       ; 9             ;
+; Equal24~5       ; 9             ;
+; Equal24~4       ; 9             ;
+; Equal23~5       ; 9             ;
+; Equal23~4       ; 9             ;
+; Equal19~5       ; 9             ;
+; Equal19~4       ; 9             ;
+; Equal16~5       ; 9             ;
+; Equal16~4       ; 9             ;
+; counterC4[20]   ; 9             ;
+; Equal11~5       ; 9             ;
+; Equal11~4       ; 9             ;
+; counterG3[20]   ; 9             ;
+; counterF3[20]   ; 8             ;
+; Equal3~5        ; 8             ;
+; Equal3~4        ; 8             ;
+; Equal2~5        ; 8             ;
+; Equal2~4        ; 8             ;
+; counterG5_s[0]  ; 8             ;
+; counterC3_s[20] ; 8             ;
+; counterF5[0]    ; 8             ;
+; counterC5_s[20] ; 8             ;
+; counterG4_s[20] ; 8             ;
+; counterF4[20]   ; 8             ;
+; counterC4_s[20] ; 8             ;
+; Equal12~5       ; 8             ;
+; Equal12~4       ; 8             ;
+; counterG3_s[20] ; 8             ;
 +-----------------+---------------+
 
 
@@ -784,142 +784,151 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------+------------------------+
 ; Interconnect Resource Type ; Usage                  ;
 +----------------------------+------------------------+
-; Block interconnects        ; 994 / 15,666 ( 6 % )   ;
-; C16 interconnects          ; 21 / 812 ( 3 % )       ;
-; C4 interconnects           ; 484 / 11,424 ( 4 % )   ;
-; Direct links               ; 413 / 15,666 ( 3 % )   ;
+; Block interconnects        ; 1,035 / 15,666 ( 7 % ) ;
+; C16 interconnects          ; 20 / 812 ( 2 % )       ;
+; C4 interconnects           ; 538 / 11,424 ( 5 % )   ;
+; Direct links               ; 407 / 15,666 ( 3 % )   ;
 ; Global clocks              ; 1 / 8 ( 13 % )         ;
-; Local interconnects        ; 1,039 / 4,608 ( 23 % ) ;
-; R24 interconnects          ; 28 / 652 ( 4 % )       ;
-; R4 interconnects           ; 230 / 13,328 ( 2 % )   ;
+; Local interconnects        ; 905 / 4,608 ( 20 % )   ;
+; R24 interconnects          ; 31 / 652 ( 5 % )       ;
+; R4 interconnects           ; 257 / 13,328 ( 2 % )   ;
 +----------------------------+------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                          ;
 +---------------------------------------------+-------------------------------+
-; Number of Logic Elements  (Average = 11.38) ; Number of LABs  (Total = 120) ;
+; Number of Logic Elements  (Average = 10.96) ; Number of LABs  (Total = 114) ;
 +---------------------------------------------+-------------------------------+
-; 1                                           ; 19                            ;
-; 2                                           ; 1                             ;
+; 1                                           ; 12                            ;
+; 2                                           ; 7                             ;
 ; 3                                           ; 2                             ;
-; 4                                           ; 3                             ;
-; 5                                           ; 2                             ;
-; 6                                           ; 7                             ;
-; 7                                           ; 4                             ;
+; 4                                           ; 1                             ;
+; 5                                           ; 1                             ;
+; 6                                           ; 2                             ;
+; 7                                           ; 2                             ;
 ; 8                                           ; 1                             ;
-; 9                                           ; 7                             ;
-; 10                                          ; 1                             ;
-; 11                                          ; 0                             ;
-; 12                                          ; 0                             ;
-; 13                                          ; 0                             ;
-; 14                                          ; 1                             ;
-; 15                                          ; 0                             ;
-; 16                                          ; 72                            ;
+; 9                                           ; 1                             ;
+; 10                                          ; 18                            ;
+; 11                                          ; 13                            ;
+; 12                                          ; 2                             ;
+; 13                                          ; 2                             ;
+; 14                                          ; 3                             ;
+; 15                                          ; 1                             ;
+; 16                                          ; 46                            ;
 +---------------------------------------------+-------------------------------+
 
 
 +--------------------------------------------------------------------+
 ; LAB-wide Signals                                                   ;
 +------------------------------------+-------------------------------+
-; LAB-wide Signals  (Average = 0.85) ; Number of LABs  (Total = 120) ;
+; LAB-wide Signals  (Average = 0.91) ; Number of LABs  (Total = 114) ;
 +------------------------------------+-------------------------------+
-; 1 Clock                            ; 102                           ;
+; 1 Clock                            ; 104                           ;
 +------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Signals Sourced  (Average = 17.98) ; Number of LABs  (Total = 120) ;
+; Number of Signals Sourced  (Average = 17.67) ; Number of LABs  (Total = 114) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
-; 1                                            ; 18                            ;
-; 2                                            ; 1                             ;
-; 3                                            ; 0                             ;
-; 4                                            ; 3                             ;
+; 1                                            ; 10                            ;
+; 2                                            ; 2                             ;
+; 3                                            ; 1                             ;
+; 4                                            ; 7                             ;
 ; 5                                            ; 0                             ;
-; 6                                            ; 3                             ;
+; 6                                            ; 1                             ;
 ; 7                                            ; 0                             ;
 ; 8                                            ; 1                             ;
-; 9                                            ; 1                             ;
-; 10                                           ; 6                             ;
-; 11                                           ; 2                             ;
-; 12                                           ; 2                             ;
-; 13                                           ; 2                             ;
+; 9                                            ; 0                             ;
+; 10                                           ; 2                             ;
+; 11                                           ; 1                             ;
+; 12                                           ; 8                             ;
+; 13                                           ; 0                             ;
 ; 14                                           ; 3                             ;
-; 15                                           ; 3                             ;
-; 16                                           ; 1                             ;
+; 15                                           ; 2                             ;
+; 16                                           ; 2                             ;
 ; 17                                           ; 1                             ;
-; 18                                           ; 0                             ;
-; 19                                           ; 1                             ;
-; 20                                           ; 2                             ;
-; 21                                           ; 1                             ;
-; 22                                           ; 2                             ;
-; 23                                           ; 6                             ;
-; 24                                           ; 6                             ;
-; 25                                           ; 17                            ;
-; 26                                           ; 22                            ;
-; 27                                           ; 13                            ;
-; 28                                           ; 2                             ;
-; 29                                           ; 1                             ;
+; 18                                           ; 2                             ;
+; 19                                           ; 6                             ;
+; 20                                           ; 10                            ;
+; 21                                           ; 5                             ;
+; 22                                           ; 20                            ;
+; 23                                           ; 5                             ;
+; 24                                           ; 3                             ;
+; 25                                           ; 4                             ;
+; 26                                           ; 1                             ;
+; 27                                           ; 2                             ;
+; 28                                           ; 1                             ;
+; 29                                           ; 4                             ;
+; 30                                           ; 9                             ;
+; 31                                           ; 1                             ;
 +----------------------------------------------+-------------------------------+
 
 
 +---------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                         ;
 +-------------------------------------------------+-------------------------------+
-; Number of Signals Sourced Out  (Average = 5.54) ; Number of LABs  (Total = 120) ;
+; Number of Signals Sourced Out  (Average = 7.09) ; Number of LABs  (Total = 114) ;
 +-------------------------------------------------+-------------------------------+
 ; 0                                               ; 0                             ;
-; 1                                               ; 19                            ;
-; 2                                               ; 4                             ;
-; 3                                               ; 3                             ;
-; 4                                               ; 17                            ;
-; 5                                               ; 9                             ;
-; 6                                               ; 15                            ;
-; 7                                               ; 25                            ;
-; 8                                               ; 19                            ;
-; 9                                               ; 3                             ;
-; 10                                              ; 0                             ;
-; 11                                              ; 2                             ;
-; 12                                              ; 3                             ;
+; 1                                               ; 13                            ;
+; 2                                               ; 7                             ;
+; 3                                               ; 2                             ;
+; 4                                               ; 5                             ;
+; 5                                               ; 8                             ;
+; 6                                               ; 13                            ;
+; 7                                               ; 11                            ;
+; 8                                               ; 5                             ;
+; 9                                               ; 8                             ;
+; 10                                              ; 19                            ;
+; 11                                              ; 21                            ;
+; 12                                              ; 1                             ;
 ; 13                                              ; 0                             ;
-; 14                                              ; 1                             ;
+; 14                                              ; 0                             ;
+; 15                                              ; 1                             ;
 +-------------------------------------------------+-------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +---------------------------------------------+-------------------------------+
-; Number of Distinct Inputs  (Average = 7.72) ; Number of LABs  (Total = 120) ;
+; Number of Distinct Inputs  (Average = 9.06) ; Number of LABs  (Total = 114) ;
 +---------------------------------------------+-------------------------------+
 ; 0                                           ; 0                             ;
 ; 1                                           ; 0                             ;
-; 2                                           ; 7                             ;
-; 3                                           ; 6                             ;
-; 4                                           ; 24                            ;
-; 5                                           ; 6                             ;
-; 6                                           ; 11                            ;
-; 7                                           ; 9                             ;
-; 8                                           ; 15                            ;
-; 9                                           ; 14                            ;
-; 10                                          ; 2                             ;
-; 11                                          ; 7                             ;
-; 12                                          ; 4                             ;
-; 13                                          ; 1                             ;
-; 14                                          ; 4                             ;
-; 15                                          ; 3                             ;
-; 16                                          ; 2                             ;
-; 17                                          ; 0                             ;
+; 2                                           ; 27                            ;
+; 3                                           ; 1                             ;
+; 4                                           ; 7                             ;
+; 5                                           ; 9                             ;
+; 6                                           ; 12                            ;
+; 7                                           ; 5                             ;
+; 8                                           ; 4                             ;
+; 9                                           ; 5                             ;
+; 10                                          ; 6                             ;
+; 11                                          ; 3                             ;
+; 12                                          ; 6                             ;
+; 13                                          ; 6                             ;
+; 14                                          ; 3                             ;
+; 15                                          ; 2                             ;
+; 16                                          ; 1                             ;
+; 17                                          ; 1                             ;
 ; 18                                          ; 1                             ;
-; 19                                          ; 1                             ;
-; 20                                          ; 1                             ;
-; 21                                          ; 1                             ;
+; 19                                          ; 0                             ;
+; 20                                          ; 3                             ;
+; 21                                          ; 0                             ;
 ; 22                                          ; 0                             ;
-; 23                                          ; 0                             ;
-; 24                                          ; 0                             ;
+; 23                                          ; 8                             ;
+; 24                                          ; 1                             ;
 ; 25                                          ; 1                             ;
+; 26                                          ; 0                             ;
+; 27                                          ; 0                             ;
+; 28                                          ; 0                             ;
+; 29                                          ; 1                             ;
+; 30                                          ; 0                             ;
+; 31                                          ; 1                             ;
 +---------------------------------------------+-------------------------------+
 
 
@@ -965,7 +974,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
-    Info: Processing started: Thu Dec 10 19:51:54 2020
+    Info: Processing started: Tue Feb 09 13:41:37 2021
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off piano -c piano
 Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info: Selected device EP2C5T144C8 for design "piano"
@@ -1003,60 +1012,74 @@ Info: I/O bank details before I/O pin placement
         Info: I/O bank number 2 does not use VREF pins and has undetermined VCCIO pins. 18 total pin(s) used --  5 pins available
         Info: I/O bank number 3 does not use VREF pins and has undetermined VCCIO pins. 15 total pin(s) used --  8 pins available
         Info: I/O bank number 4 does not use VREF pins and has 3.3V VCCIO pins. 24 total pin(s) used --  0 pins available
-Info: Fitter preparation operations ending: elapsed time is 00:00:00
+Info: Fitter preparation operations ending: elapsed time is 00:00:01
 Info: Fitter placement preparation operations beginning
 Info: Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info: Fitter placement operations beginning
 Info: Fitter placement was successful
 Info: Fitter placement operations ending: elapsed time is 00:00:01
-Info: Slack time is -4.121 ns between source register "counterC5_s[10]" and destination register "counterC5_s[0]"
+Info: Slack time is -4.375 ns between source register "counterF3_s[0]" and destination register "counterC4[9]"
     Info: + Largest register to register requirement is 0.736 ns
     Info:   Shortest clock path from clock "clk" to destination register is 2.494 ns
         Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = Unassigned; Fanout = 1; CLK Node = 'clk'
-        Info: 2: + IC(0.142 ns) + CELL(0.000 ns) = 0.996 ns; Loc. = Unassigned; Fanout = 792; COMB Node = 'clk~clkctrl'
-        Info: 3: + IC(0.832 ns) + CELL(0.666 ns) = 2.494 ns; Loc. = Unassigned; Fanout = 10; REG Node = 'counterC5_s[0]'
+        Info: 2: + IC(0.142 ns) + CELL(0.000 ns) = 0.996 ns; Loc. = Unassigned; Fanout = 772; COMB Node = 'clk~clkctrl'
+        Info: 3: + IC(0.832 ns) + CELL(0.666 ns) = 2.494 ns; Loc. = Unassigned; Fanout = 3; REG Node = 'counterC4[9]'
         Info: Total cell delay = 1.520 ns ( 60.95 % )
         Info: Total interconnect delay = 0.974 ns ( 39.05 % )
     Info:   Longest clock path from clock "clk" to destination register is 2.494 ns
         Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = Unassigned; Fanout = 1; CLK Node = 'clk'
-        Info: 2: + IC(0.142 ns) + CELL(0.000 ns) = 0.996 ns; Loc. = Unassigned; Fanout = 792; COMB Node = 'clk~clkctrl'
-        Info: 3: + IC(0.832 ns) + CELL(0.666 ns) = 2.494 ns; Loc. = Unassigned; Fanout = 10; REG Node = 'counterC5_s[0]'
+        Info: 2: + IC(0.142 ns) + CELL(0.000 ns) = 0.996 ns; Loc. = Unassigned; Fanout = 772; COMB Node = 'clk~clkctrl'
+        Info: 3: + IC(0.832 ns) + CELL(0.666 ns) = 2.494 ns; Loc. = Unassigned; Fanout = 3; REG Node = 'counterC4[9]'
         Info: Total cell delay = 1.520 ns ( 60.95 % )
         Info: Total interconnect delay = 0.974 ns ( 39.05 % )
     Info:   Shortest clock path from clock "clk" to source register is 2.494 ns
         Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = Unassigned; Fanout = 1; CLK Node = 'clk'
-        Info: 2: + IC(0.142 ns) + CELL(0.000 ns) = 0.996 ns; Loc. = Unassigned; Fanout = 792; COMB Node = 'clk~clkctrl'
-        Info: 3: + IC(0.832 ns) + CELL(0.666 ns) = 2.494 ns; Loc. = Unassigned; Fanout = 3; REG Node = 'counterC5_s[10]'
+        Info: 2: + IC(0.142 ns) + CELL(0.000 ns) = 0.996 ns; Loc. = Unassigned; Fanout = 772; COMB Node = 'clk~clkctrl'
+        Info: 3: + IC(0.832 ns) + CELL(0.666 ns) = 2.494 ns; Loc. = Unassigned; Fanout = 34; REG Node = 'counterF3_s[0]'
         Info: Total cell delay = 1.520 ns ( 60.95 % )
         Info: Total interconnect delay = 0.974 ns ( 39.05 % )
     Info:   Longest clock path from clock "clk" to source register is 2.494 ns
         Info: 1: + IC(0.000 ns) + CELL(0.854 ns) = 0.854 ns; Loc. = Unassigned; Fanout = 1; CLK Node = 'clk'
-        Info: 2: + IC(0.142 ns) + CELL(0.000 ns) = 0.996 ns; Loc. = Unassigned; Fanout = 792; COMB Node = 'clk~clkctrl'
-        Info: 3: + IC(0.832 ns) + CELL(0.666 ns) = 2.494 ns; Loc. = Unassigned; Fanout = 3; REG Node = 'counterC5_s[10]'
+        Info: 2: + IC(0.142 ns) + CELL(0.000 ns) = 0.996 ns; Loc. = Unassigned; Fanout = 772; COMB Node = 'clk~clkctrl'
+        Info: 3: + IC(0.832 ns) + CELL(0.666 ns) = 2.494 ns; Loc. = Unassigned; Fanout = 34; REG Node = 'counterF3_s[0]'
         Info: Total cell delay = 1.520 ns ( 60.95 % )
         Info: Total interconnect delay = 0.974 ns ( 39.05 % )
     Info:   Micro clock to output delay of source is 0.304 ns
     Info:   Micro setup delay of destination is -0.040 ns
-    Info: - Longest register to register delay is 4.857 ns
-        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = Unassigned; Fanout = 3; REG Node = 'counterC5_s[10]'
-        Info: 2: + IC(1.259 ns) + CELL(0.370 ns) = 1.629 ns; Loc. = Unassigned; Fanout = 1; COMB Node = 'Equal25~2'
-        Info: 3: + IC(1.190 ns) + CELL(0.370 ns) = 3.189 ns; Loc. = Unassigned; Fanout = 8; COMB Node = 'Equal25~4'
-        Info: 4: + IC(1.190 ns) + CELL(0.370 ns) = 4.749 ns; Loc. = Unassigned; Fanout = 1; COMB Node = 'counterC5_s~21'
-        Info: 5: + IC(0.000 ns) + CELL(0.108 ns) = 4.857 ns; Loc. = Unassigned; Fanout = 10; REG Node = 'counterC5_s[0]'
-        Info: Total cell delay = 1.218 ns ( 25.08 % )
-        Info: Total interconnect delay = 3.639 ns ( 74.92 % )
-Info: Estimated most critical path is register to register delay of 4.857 ns
-    Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LAB_X14_Y4; Fanout = 3; REG Node = 'counterC5_s[10]'
-    Info: 2: + IC(1.259 ns) + CELL(0.370 ns) = 1.629 ns; Loc. = LAB_X14_Y5; Fanout = 1; COMB Node = 'Equal25~2'
-    Info: 3: + IC(1.190 ns) + CELL(0.370 ns) = 3.189 ns; Loc. = LAB_X14_Y4; Fanout = 8; COMB Node = 'Equal25~4'
-    Info: 4: + IC(1.190 ns) + CELL(0.370 ns) = 4.749 ns; Loc. = LAB_X14_Y5; Fanout = 1; COMB Node = 'counterC5_s~21'
-    Info: 5: + IC(0.000 ns) + CELL(0.108 ns) = 4.857 ns; Loc. = LAB_X14_Y5; Fanout = 10; REG Node = 'counterC5_s[0]'
-    Info: Total cell delay = 1.218 ns ( 25.08 % )
-    Info: Total interconnect delay = 3.639 ns ( 74.92 % )
+    Info: - Longest register to register delay is 5.111 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = Unassigned; Fanout = 34; REG Node = 'counterF3_s[0]'
+        Info: 2: + IC(1.728 ns) + CELL(0.621 ns) = 2.349 ns; Loc. = Unassigned; Fanout = 2; COMB Node = 'Add12~1'
+        Info: 3: + IC(0.000 ns) + CELL(0.086 ns) = 2.435 ns; Loc. = Unassigned; Fanout = 2; COMB Node = 'Add12~3'
+        Info: 4: + IC(0.000 ns) + CELL(0.086 ns) = 2.521 ns; Loc. = Unassigned; Fanout = 2; COMB Node = 'Add12~5'
+        Info: 5: + IC(0.000 ns) + CELL(0.086 ns) = 2.607 ns; Loc. = Unassigned; Fanout = 2; COMB Node = 'Add12~7'
+        Info: 6: + IC(0.000 ns) + CELL(0.086 ns) = 2.693 ns; Loc. = Unassigned; Fanout = 2; COMB Node = 'Add12~9'
+        Info: 7: + IC(0.000 ns) + CELL(0.086 ns) = 2.779 ns; Loc. = Unassigned; Fanout = 2; COMB Node = 'Add12~11'
+        Info: 8: + IC(0.000 ns) + CELL(0.086 ns) = 2.865 ns; Loc. = Unassigned; Fanout = 2; COMB Node = 'Add12~13'
+        Info: 9: + IC(0.000 ns) + CELL(0.086 ns) = 2.951 ns; Loc. = Unassigned; Fanout = 2; COMB Node = 'Add12~15'
+        Info: 10: + IC(0.000 ns) + CELL(0.506 ns) = 3.457 ns; Loc. = Unassigned; Fanout = 1; COMB Node = 'Add12~16'
+        Info: 11: + IC(0.895 ns) + CELL(0.651 ns) = 5.003 ns; Loc. = Unassigned; Fanout = 1; COMB Node = 'counterC4~26'
+        Info: 12: + IC(0.000 ns) + CELL(0.108 ns) = 5.111 ns; Loc. = Unassigned; Fanout = 3; REG Node = 'counterC4[9]'
+        Info: Total cell delay = 2.488 ns ( 48.68 % )
+        Info: Total interconnect delay = 2.623 ns ( 51.32 % )
+Info: Estimated most critical path is register to register delay of 5.111 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LAB_X18_Y6; Fanout = 34; REG Node = 'counterF3_s[0]'
+    Info: 2: + IC(1.728 ns) + CELL(0.621 ns) = 2.349 ns; Loc. = LAB_X20_Y7; Fanout = 2; COMB Node = 'Add12~1'
+    Info: 3: + IC(0.000 ns) + CELL(0.086 ns) = 2.435 ns; Loc. = LAB_X20_Y7; Fanout = 2; COMB Node = 'Add12~3'
+    Info: 4: + IC(0.000 ns) + CELL(0.086 ns) = 2.521 ns; Loc. = LAB_X20_Y7; Fanout = 2; COMB Node = 'Add12~5'
+    Info: 5: + IC(0.000 ns) + CELL(0.086 ns) = 2.607 ns; Loc. = LAB_X20_Y7; Fanout = 2; COMB Node = 'Add12~7'
+    Info: 6: + IC(0.000 ns) + CELL(0.086 ns) = 2.693 ns; Loc. = LAB_X20_Y7; Fanout = 2; COMB Node = 'Add12~9'
+    Info: 7: + IC(0.000 ns) + CELL(0.086 ns) = 2.779 ns; Loc. = LAB_X20_Y7; Fanout = 2; COMB Node = 'Add12~11'
+    Info: 8: + IC(0.000 ns) + CELL(0.086 ns) = 2.865 ns; Loc. = LAB_X20_Y7; Fanout = 2; COMB Node = 'Add12~13'
+    Info: 9: + IC(0.000 ns) + CELL(0.086 ns) = 2.951 ns; Loc. = LAB_X20_Y7; Fanout = 2; COMB Node = 'Add12~15'
+    Info: 10: + IC(0.000 ns) + CELL(0.506 ns) = 3.457 ns; Loc. = LAB_X20_Y7; Fanout = 1; COMB Node = 'Add12~16'
+    Info: 11: + IC(0.895 ns) + CELL(0.651 ns) = 5.003 ns; Loc. = LAB_X20_Y3; Fanout = 1; COMB Node = 'counterC4~26'
+    Info: 12: + IC(0.000 ns) + CELL(0.108 ns) = 5.111 ns; Loc. = LAB_X20_Y3; Fanout = 3; REG Node = 'counterC4[9]'
+    Info: Total cell delay = 2.488 ns ( 48.68 % )
+    Info: Total interconnect delay = 2.623 ns ( 51.32 % )
 Info: Fitter routing operations beginning
-Info: Average interconnect usage is 2% of the available device resources
-    Info: Peak interconnect usage is 3% of the available device resources in the region that extends from location X0_Y0 to location X13_Y14
-Info: Fitter routing operations ending: elapsed time is 00:00:00
+Info: Average interconnect usage is 3% of the available device resources
+    Info: Peak interconnect usage is 4% of the available device resources in the region that extends from location X14_Y0 to location X28_Y14
+Info: Fitter routing operations ending: elapsed time is 00:00:01
 Info: The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info: Optimizations that may affect the design's routability were skipped
     Info: Optimizations that may affect the design's timing were skipped
@@ -1110,9 +1133,9 @@ Warning: The Reserve All Unused Pins setting has not been specified, and will de
 Info: Generated suppressed messages file D:/Projects/Poor-Mans-Piano/Piano/piano.fit.smsg
 Info: Quartus II Fitter was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 283 megabytes
-    Info: Processing ended: Thu Dec 10 19:51:59 2020
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Processing ended: Tue Feb 09 13:41:44 2021
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:07
 
 
 +----------------------------+

@@ -1,14 +1,14 @@
-Fitter Status : Successful - Thu Dec 10 19:51:58 2020
+Fitter Status : Successful - Tue Feb 09 13:41:43 2021
 Quartus II Version : 9.0 Build 132 02/25/2009 SJ Full Version
 Revision Name : piano
 Top-level Entity Name : piano
 Family : Cyclone II
 Device : EP2C5T144C8
 Timing Models : Final
-Total logic elements : 1,366 / 4,608 ( 30 % )
-    Total combinational functions : 1,366 / 4,608 ( 30 % )
-    Dedicated logic registers : 792 / 4,608 ( 17 % )
-Total registers : 792
+Total logic elements : 1,250 / 4,608 ( 27 % )
+    Total combinational functions : 1,250 / 4,608 ( 27 % )
+    Dedicated logic registers : 772 / 4,608 ( 17 % )
+Total registers : 772
 Total pins : 73 / 89 ( 82 % )
 Total virtual pins : 0
 Total memory bits : 0 / 119,808 ( 0 % )

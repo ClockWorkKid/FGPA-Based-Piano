@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 11.124 ns
-From           : flipper[20]
-To             : speaker[20]
+Actual Time    : 12.455 ns
+From           : flipper[4]
+To             : speaker[34]
 From Clock     : clk
 To Clock       : --
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 14.812 ns
-From           : switches[20]
-To             : speaker[20]
+Actual Time    : 14.795 ns
+From           : switches[34]
+To             : speaker[34]
 From Clock     : --
 To Clock       : --
 Failed Paths   : 0
@@ -25,9 +25,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'clk'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 195.27 MHz ( period = 5.121 ns )
-From           : counterD4_s[4]
-To             : flipper[15]
+Actual Time    : 192.12 MHz ( period = 5.205 ns )
+From           : counterF3_s[0]
+To             : counterD3[20]
 From Clock     : clk
 To Clock       : clk
 Failed Paths   : 0

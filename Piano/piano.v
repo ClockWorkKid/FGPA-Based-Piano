@@ -5,7 +5,7 @@ input clk;
 output [35:0] speaker; // Speakers for 36 different notes
 reg [35:0] flipper; // 36 1-bit flip-flops for each note  
 
-parameter m=50; // base clock frequency of system
+parameter m=1; // base clock frequency of system
 parameter n=20;
 
 // 36 individual toggle frequencies of each note for 1MHz clock 

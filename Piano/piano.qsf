@@ -122,3 +122,5 @@ set_location_assignment PIN_63 -to speaker[10]
 set_location_assignment PIN_60 -to speaker[9]
 set_location_assignment PIN_59 -to speaker[8]
 set_location_assignment PIN_58 -to speaker[7]
+set_global_assignment -name VECTOR_WAVEFORM_FILE piano.vwf
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
