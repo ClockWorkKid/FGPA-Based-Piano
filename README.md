@@ -1,5 +1,5 @@
-# Poor-Mans-Piano
-FPGA based MIDI keyboard project for EEE 304 (Digital Electronics Laboratory)
+# FPGA-Based-Piano
+FPGA (Cyclone-II) based MIDI keyboard project for EEE 304 (Digital Electronics Laboratory)
 
 This project was adapted from the following GIT repository:
 https://github.com/mdelrosa/cafinalproject
