@@ -234,5 +234,5 @@ There are a few shortcomings of the project:
 
 - Mir Sayeed Mohammad (EEE) (github - https://github.com/ClockWorkKid)
 - Himaddri Roy (EEE) (github - https://github.com/himu587)
-- Tusher Raihan (EEE) (github - )
+- Sanowar Raihan (EEE) (github - https://github.com/sanowar-raihan)
 
