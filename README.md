@@ -7,10 +7,8 @@ https://github.com/mdelrosa/cafinalproject
 Demonstration video:
 https://youtu.be/95gMFHwd9gE
 
-<figure align="center">
-    <img src="screenshots/hardware/piano.jpg" alt="drawing" width="400"/>
-    <figcaption>Poor Man's Piano</figcaption>
-</figure>
+[<img src="https://i.ytimg.com/vi/95gMFHwd9gE/maxresdefault.jpg" width="50%">](https://www.youtube.com/watch?v=95gMFHwd9gE "Now in Android: 55")
+
 
 ## Contents
 - [Repository Overview](#repository-overview)
